@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:beta": "gcloud app deploy",
-    "compodoc": "npx compodoc -p tsconfig.json src -s"
+    "compodoc": "npx compodoc -p tsconfig.json src -s",
+    "heroku-postbuild": "ng build --prod"
+
   },
   "private": true,
   "dependencies": {
@@ -48,6 +50,8 @@
     "@ckeditor/ckeditor5-alignment": "^24.0.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "@angular/compiler-cli": "~11.0.1",
+    "@angular/cli": "~11.0.2",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
