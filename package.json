@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:beta": "gcloud app deploy",
-    "compodoc": "npx compodoc -p tsconfig.json src -s",
-    "postinstall": "ng build --aot --target=production"
+    "compodoc": "npx compodoc -p tsconfig.json src -s"
   },
   "private": true,
   "dependencies": {
