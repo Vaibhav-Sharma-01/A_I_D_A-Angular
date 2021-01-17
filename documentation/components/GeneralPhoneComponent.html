@@ -1,0 +1,1076 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>aida-next documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">aida-next documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>GeneralPhoneComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/shared/components/general/general-phone/general-phone.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-general-phone</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./general-phone.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./general-phone.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isCalling">isCalling</a>
+                            </li>
+                            <li>
+                                <a href="#isPhoneValid">isPhoneValid</a>
+                            </li>
+                            <li>
+                                <a href="#phone">phone</a>
+                            </li>
+                            <li>
+                                <a href="#phoneInput">phoneInput</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#call">call</a>
+                            </li>
+                            <li>
+                                <a href="#callEnd">callEnd</a>
+                            </li>
+                            <li>
+                                <a href="#clearAll">clearAll</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#num">num</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(registriesService: <a href="../injectables/RegistriesService.html">RegistriesService</a>, toast: <a href="../injectables/ToastMessage.html">ToastMessage</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>registriesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RegistriesService.html" target="_self" >RegistriesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastMessage.html" target="_self" >ToastMessage</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="call"></a>
+                    <span class="name">
+                        <b>
+                            call
+                        </b>
+                        <a href="#call"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>call()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callEnd"></a>
+                    <span class="name">
+                        <b>
+                            callEnd
+                        </b>
+                        <a href="#callEnd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>callEnd()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearAll"></a>
+                    <span class="name">
+                        <b>
+                            clearAll
+                        </b>
+                        <a href="#clearAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearAll()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="num"></a>
+                    <span class="name">
+                        <b>
+                            num
+                        </b>
+                        <a href="#num"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>num(word: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>word</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isCalling"></a>
+                        <span class="name">
+                            <b>
+                            isCalling</b>
+                            <a href="#isCalling"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isPhoneValid"></a>
+                        <span class="name">
+                            <b>
+                            isPhoneValid</b>
+                            <a href="#isPhoneValid"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="phone"></a>
+                        <span class="name">
+                            <b>
+                            phone</b>
+                            <a href="#phone"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="phoneInput"></a>
+                        <span class="name">
+                            <b>
+                            phoneInput</b>
+                            <a href="#phoneInput"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/shared/components/general/general-phone/general-phone.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+// AIDA Services
+import { RegistriesService } from &#x27;@features/registries/service/registries.service&#x27;;
+import { ToastMessage } from &#x27;@shared/services/toast-message&#x27;;
+
+@Component({
+  selector: &#x27;app-general-phone&#x27;,
+  templateUrl: &#x27;./general-phone.component.html&#x27;,
+  styleUrls: [&#x27;./general-phone.component.scss&#x27;]
+})
+export class GeneralPhoneComponent implements OnInit {
+
+  phone:string &#x3D; &#x27;&#x27;;
+  phoneInput: string;
+  isCalling: boolean &#x3D; false;
+  isPhoneValid: boolean &#x3D; false;
+
+  constructor(
+    private registriesService: RegistriesService,
+    private toast: ToastMessage
+  ) { }
+
+  ngOnInit(): void {
+  }
+
+  num(word: string) {
+    this.isPhoneValid &#x3D; false;
+    this.phone +&#x3D; word;
+    this.phoneInput &#x3D; this.phone;
+    if (this.phoneInput.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
+      this.isPhoneValid &#x3D; true;
+    }
+  }
+
+  call() {
+    if (this.isPhoneValid) {
+      const data &#x3D; {
+        &quot;url&quot;: &quot;https://4a6658268240.ngrok.io/v1/api/call&quot;,
+        &quot;to&quot;: &quot;+917042618988&quot;,
+        &quot;from&quot;: &quot;+12566459370&quot;,
+        &quot;callTo&quot;: &quot;+918791234693&quot;
+      };    
+      this.registriesService.callPhone(data).subscribe(res &#x3D;&gt; {
+        this.isCalling &#x3D; true;
+        this.toast.open(&#x60;Calling ${this.phoneInput}...&#x60;, &#x27;success&#x27;);
+      }, error &#x3D;&gt; {
+        this.toast.open(&#x60;Unable to make a call.&#x60;, &#x27;error&#x27;);
+      })
+    }
+  }
+
+  clearAll() {
+    this.phoneInput &#x3D; &#x27;&#x27;;
+    this.phone &#x3D; &#x27;&#x27;;
+    this.isPhoneValid &#x3D; false;
+  }
+
+  callEnd() {
+    this.isCalling &#x3D; false;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;phone-wrapper&quot;&gt;
+  &lt;div class&#x3D;&quot;dial-pad-wrapper&quot; *ngIf&#x3D;&quot;!isCalling&quot;&gt;
+    &lt;div class&#x3D;&quot;phoneString&quot;&gt;
+      &lt;input type&#x3D;&quot;text&quot; disabled [(ngModel)]&#x3D;&quot;phoneInput&quot;&gt;
+      &lt;div class&#x3D;&quot;phone-required&quot; *ngIf&#x3D;&quot;!isPhoneValid&quot;&gt;Phone is required and should be valid.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;digits&quot;&gt;
+      &lt;div class&#x3D;&quot;dig pound number-dig&quot; name&#x3D;&quot;1&quot; (click)&#x3D;&quot;num(&#x27;1&#x27;)&quot;&gt;1&lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;2&quot; (click)&#x3D;&quot;num(&#x27;2&#x27;)&quot;&gt;2
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;ABC&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;3&quot; (click)&#x3D;&quot;num(&#x27;3&#x27;)&quot;&gt;3
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;DEF&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;4&quot; (click)&#x3D;&quot;num(&#x27;4&#x27;)&quot;&gt;4
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;GHI&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;5&quot; (click)&#x3D;&quot;num(&#x27;5&#x27;)&quot;&gt;5
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;JKL&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;6&quot; (click)&#x3D;&quot;num(&#x27;6&#x27;)&quot;&gt;6
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;MNO&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;7&quot; (click)&#x3D;&quot;num(&#x27;7&#x27;)&quot;&gt;7
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;PQRS&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;8&quot; (click)&#x3D;&quot;num(&#x27;8&#x27;)&quot;&gt;8
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;TUV&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig&quot; name&#x3D;&quot;9&quot; (click)&#x3D;&quot;num(&#x27;9&#x27;)&quot;&gt;9
+        &lt;div class&#x3D;&quot;sub-dig&quot;&gt;WXYZ&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig astrisk&quot; name&#x3D;&quot;*&quot; (click)&#x3D;&quot;num(&#x27;+&#x27;)&quot;&gt;+&lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig pound&quot; name&#x3D;&quot;0&quot; (click)&#x3D;&quot;num(&#x27;0&#x27;)&quot;&gt;0&lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig number-dig pound&quot; name&#x3D;&quot;#&quot; (click)&#x3D;&quot;num(&#x27;#&#x27;)&quot;&gt;#&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;digits&quot;&gt;
+      &lt;div class&#x3D;&quot;dig addPerson action-dig&quot;&gt;&lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig dig-spacer call center&quot; (click)&#x3D;&quot;call()&quot; matTooltip&#x3D;&quot;Call&quot;&gt;
+        &lt;mat-icon&gt;phone&lt;/mat-icon&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;dig goBack action-dig center&quot; (click)&#x3D;&quot;clearAll()&quot; matTooltip&#x3D;&quot;Clear All&quot;&gt;
+        &lt;mat-icon&gt;clear_all&lt;/mat-icon&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;dialing&quot; *ngIf&#x3D;&quot;isCalling&quot;&gt;
+    &lt;div class&#x3D;&quot;calling-to&quot;&gt;{{ phone }}&lt;/div&gt;
+    &lt;div class&#x3D;&quot;dialing-animation&quot;&gt;
+      &lt;div class&#x3D;&quot;animation&quot;&gt;
+        &lt;span class&#x3D;&quot;icon ring&quot;&gt;&lt;/span&gt;
+        &lt;div class&#x3D;&quot;circle one&quot;&gt;&lt;/div&gt;
+        &lt;div class&#x3D;&quot;circle two&quot;&gt;&lt;/div&gt;
+        &lt;div class&#x3D;&quot;circle three&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;cut-phone&quot; (click)&#x3D;&quot;callEnd()&quot;  matTooltip&#x3D;&quot;Call End&quot;&gt;
+      &lt;div class&#x3D;&quot;phone-call-end&quot;&gt;
+        &lt;mat-icon&gt;call_end&lt;/mat-icon&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./general-phone.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  21% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-20deg);
+  }
+
+  41% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(-20deg);
+  }
+
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    width: 130px;
+    height: 130px;
+    transform: translate(-25px, -25px);
+    opacity: 1;
+    border-width: 8px;
+  }
+
+  100% {
+    width: 320px;
+    height: 320px;
+    transform: translate(-120px, -120px);
+    opacity: 0.2;
+    border-width: 15px;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.phone-wrapper {
+  user-select: none;
+  .digits {
+    overflow: hidden;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    .dig.pound {
+      padding-top: 10px;
+      height: 56px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      justify-content: center;
+    }
+    .dig {
+      color: white;
+      font-size: 30px;
+      float: left;
+      background-color: #2d2d2d;
+      text-align: center;
+      width: 60px;
+      height: 56px;
+      border-radius: 100%;
+      margin: 10px 0px;
+      padding-top: 4px;
+      font-weight: 700;
+      cursor: pointer;
+      font-weight: 400;
+      &amp;:nth-child(3n-1) {
+        margin: 10px calc(50% - 90px);
+      }
+      .sub-dig {
+        font-size: 10px;
+        font-weight: 300;
+        position: relative;
+        top: -2px;
+      }
+      &amp;.addPerson {
+        background-color: #285efa;
+      }
+      &amp;.goBack {
+        background-color: #fa4a5d;
+      }
+      &amp;.call {
+        background-color: #3de067;
+      }
+    }
+    .dig-spacer {
+      width: 60px;
+      margin: 10px calc(50% - 90px);
+      float: left;
+    }
+  }
+
+  .phoneString {
+    width: 100%;
+    height: 80px;
+    background-color: #2d2d2d;
+    margin-top: 40px;
+    position: relative;
+    input {
+      background-color: transparent;
+      width: 100%;
+      height: 80px;
+      border: none;
+      font-size: 30px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 2px;
+      outline: 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .phone-required {
+      color: #ef7166;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    mat-icon {
+      position: relative;
+      top: -2px;
+    }
+  }
+  .dialing {
+    .animation {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      border-radius: 50%;
+    }
+    .dialing-animation {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-color: transparent;
+      .ring {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(&quot;/assets/phone.png&quot;);
+        -webkit-animation: ring 0.6s infinite;
+        -o-animation: ring 0.6s infinite;
+        animation: ring 0.6s infinite;
+      }
+      .circle {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        transform: translate(-25px, -25px);
+        border-radius: 50%;
+        border: 10px solid #f5f7f9;
+        background-color: transparent;
+        -webkit-animation: wave 1.4s infinite linear;
+        -o-animation: wave 1.4s infinite linear;
+        animation: wave 1.4s infinite linear;
+        &amp;.two {
+          animation-delay: 0.35s;
+          opacity: 0;
+        }
+        &amp;.three {
+          animation-delay: 0.7s;
+          opacity: 0;
+        }
+      }
+    }
+    .calling-to {
+      padding: 50px 0 20px;
+      text-align: center;
+      font-size: 25px;
+      color: #fff;
+    }
+    .cut-phone {
+      width: 60px;
+      height: 60px;
+      background: #fa4a5d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      margin: 0 auto;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="phone-wrapper">  <div class="dial-pad-wrapper" *ngIf="!isCalling">    <div class="phoneString">      <input type="text" disabled [(ngModel)]="phoneInput">      <div class="phone-required" *ngIf="!isPhoneValid">Phone is required and should be valid.</div>    </div>    <div class="digits">      <div class="dig pound number-dig" name="1" (click)="num(\'1\')">1</div>      <div class="dig number-dig" name="2" (click)="num(\'2\')">2        <div class="sub-dig">ABC</div>      </div>      <div class="dig number-dig" name="3" (click)="num(\'3\')">3        <div class="sub-dig">DEF</div>      </div>      <div class="dig number-dig" name="4" (click)="num(\'4\')">4        <div class="sub-dig">GHI</div>      </div>      <div class="dig number-dig" name="5" (click)="num(\'5\')">5        <div class="sub-dig">JKL</div>      </div>      <div class="dig number-dig" name="6" (click)="num(\'6\')">6        <div class="sub-dig">MNO</div>      </div>      <div class="dig number-dig" name="7" (click)="num(\'7\')">7        <div class="sub-dig">PQRS</div>      </div>      <div class="dig number-dig" name="8" (click)="num(\'8\')">8        <div class="sub-dig">TUV</div>      </div>      <div class="dig number-dig" name="9" (click)="num(\'9\')">9        <div class="sub-dig">WXYZ</div>      </div>      <div class="dig number-dig astrisk" name="*" (click)="num(\'+\')">+</div>      <div class="dig number-dig pound" name="0" (click)="num(\'0\')">0</div>      <div class="dig number-dig pound" name="#" (click)="num(\'#\')">#</div>    </div>    <div class="digits">      <div class="dig addPerson action-dig"></div>      <div class="dig dig-spacer call center" (click)="call()" matTooltip="Call">        <mat-icon>phone</mat-icon>      </div>      <div class="dig goBack action-dig center" (click)="clearAll()" matTooltip="Clear All">        <mat-icon>clear_all</mat-icon>      </div>    </div>  </div>  <div class="dialing" *ngIf="isCalling">    <div class="calling-to">{{ phone }}</div>    <div class="dialing-animation">      <div class="animation">        <span class="icon ring"></span>        <div class="circle one"></div>        <div class="circle two"></div>        <div class="circle three"></div>      </div>    </div>    <div class="cut-phone" (click)="callEnd()"  matTooltip="Call End">      <div class="phone-call-end">        <mat-icon>call_end</mat-icon>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActivitiesComponent', 'selector': 'app-activities'},{'name': 'AddCompanyComponent', 'selector': 'app-add-company'},{'name': 'AddContactComponent', 'selector': 'app-add-contact'},{'name': 'AddWidgetsDialogComponent', 'selector': 'app-add-widgets-dialog'},{'name': 'AidaLoaderComponent', 'selector': 'app-aida-loader'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssociatedContactComponent', 'selector': 'app-associated-contact'},{'name': 'AttachmentsComponent', 'selector': 'app-attachments'},{'name': 'AuthenticationComponent', 'selector': 'app-authentication'},{'name': 'BreadcrumbsComponent', 'selector': 'app-breadcrumbs'},{'name': 'CompaniesComponent', 'selector': 'app-companies'},{'name': 'CompanyComponent', 'selector': 'app-company'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContactsComponent', 'selector': 'app-contacts'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DeleteDialogComponent', 'selector': 'app-delete-dialog'},{'name': 'DriveComponent', 'selector': 'app-drive'},{'name': 'EmailComponent', 'selector': 'app-email'},{'name': 'EmailsComponent', 'selector': 'app-emails'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'ForgotPasswordStepFirstComponent', 'selector': 'app-forgot-password-step-first'},{'name': 'ForgotPasswordStepSecondComponent', 'selector': 'app-forgot-password-step-second'},{'name': 'GeneralEmailComponent', 'selector': 'app-general-email'},{'name': 'GeneralPhoneComponent', 'selector': 'app-general-phone'},{'name': 'GeneralSharedComponent', 'selector': 'app-general-shared'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HumanResourceComponent', 'selector': 'app-human-resource'},{'name': 'InformationComponent', 'selector': 'app-information'},{'name': 'ListsComponent', 'selector': 'app-lists'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBodyComponent', 'selector': 'app-main-body'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'OpportunityComponent', 'selector': 'app-opportunity'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'QuickMenuComponent', 'selector': 'app-quick-menu'},{'name': 'RegistriesComponent', 'selector': 'app-registries'},{'name': 'RelatedCompaniesComponent', 'selector': 'app-related-companies'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SideSlideComponent', 'selector': 'app-side-slide'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SubHeaderMenuComponent', 'selector': 'app-sub-header-menu'},{'name': 'TabsComponent', 'selector': 'app-tabs'},{'name': 'TasksComponent', 'selector': 'app-tasks'},{'name': 'TenantComponent', 'selector': 'app-tenant'},{'name': 'TenantsComponent', 'selector': 'app-tenants'},{'name': 'TestComponent', 'selector': 'app-test'},{'name': 'TimeTrackingComponent', 'selector': 'app-time-tracking'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'WebsiteComponent', 'selector': 'app-website'},{'name': 'WidgetsComponent', 'selector': 'app-widgets'},{'name': 'WidgetsSharedComponent', 'selector': 'app-widgets-shared'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GeneralPhoneComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GeneralPhoneComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<div class="add-company-form">
+  <div class="loader-wrapper" *ngIf="isLoading">
+    <app-aida-loader></app-aida-loader>
+  </div>
+  <div class="outer-form-body">
+    <form [formGroup]="addCompanyForm">
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{'RegistriesModule.CompanyName' | translate}}</mat-label>
+          <input matInput type="text" formControlName="name">
+          <mat-error *ngIf="(this.addCompanyForm.get('name')?.invalid || this.addCompanyForm.get('name')?.touched) && this.addCompanyForm.get('name')?.errors?.required">
+            {{'RegistriesModule.CompanyNameIsRequired' | translate}}</mat-error>
+            <mat-error *ngIf="(this.addCompanyForm.get('name')?.invalid || this.addCompanyForm.get('name')?.touched) && this.addCompanyForm.get('name')?.errors?.pattern">
+              {{'RegistriesModule.FirstAlphabetShouldBeCapital' | translate}}</mat-error>
+        </mat-form-field>
+        
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{'RegistriesModule.CompanyEmail' | translate}}</mat-label>
+          <input matInput type="text" formControlName="email">
+          <mat-error *ngIf="(this.addCompanyForm.get('email')?.invalid || this.addCompanyForm.get('email')?.touched) && this.addCompanyForm.get('email')?.errors?.required">
+            {{'RegistriesModule.CompanyEmailIsRequired' | translate}}</mat-error>
+            <mat-error *ngIf="(this.addCompanyForm.get('email')?.invalid || this.addCompanyForm.get('email')?.touched) && this.addCompanyForm.get('email')?.errors?.pattern">
+              {{'RegistriesModule.ShouldBeAProperEmail' | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{'RegistriesModule.PhoneNumber' | translate}}</mat-label>
+          <input matInput type="text" formControlName="phoneNumber">
+          <mat-error *ngIf="(this.addCompanyForm.get('phoneNumber')?.invalid || this.addCompanyForm.get('phoneNumber')?.touched) && this.addCompanyForm.get('phoneNumber')?.errors?.required">
+            {{'RegistriesModule.PhoneNumberIsRequired' | translate}}</mat-error>
+            <mat-error *ngIf="(this.addCompanyForm.get('phoneNumber')?.invalid || this.addCompanyForm.get('phoneNumber')?.touched) && this.addCompanyForm.get('phoneNumber')?.errors?.pattern">
+              {{'RegistriesModule.ShouldBeOfProperLengthAndShouldContainOnlyNumbers' | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{'RegistriesModule.VATNumber' | translate}}</mat-label>
+          <input matInput type="text" formControlName="vatNumber">
+          <mat-error
+            *ngIf="this.addCompanyForm.get('vatNumber')?.invalid || this.addCompanyForm.get('vatNumber')?.touched">
+            {{'RegistriesModule.VatNumberIsRequired' | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{'RegistriesModule.Manager' | translate}}</mat-label>
+          <mat-select formControlName="manager">
+            <mat-option *ngFor="let manager of managers" [value]="manager.id">
+              {{ manager.name | titlecase }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>{{'RegistriesModule.Typology' | translate}}</mat-label>
+          <mat-select formControlName="typology">
+            <mat-option *ngFor="let industry of companyIndustries" [value]="industry.value">
+              {{ industry.value }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.addCompanyForm.get('typology')?.invalid || this.addCompanyForm.get('typology')?.touched">{{'RegistriesModule.IndustryIsRequired' | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>{{'RegistriesModule.Country' | translate}}</mat-label>
+          <mat-select formControlName="country">
+            <mat-option>
+              <ngx-mat-select-search [formControl]="countryValue"></ngx-mat-select-search>
+            </mat-option>
+            <mat-option *ngFor="let country of filteredCountry | async"[value]="country.name">
+              {{ country.name | titlecase }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.addCompanyForm.get('country')?.invalid || this.addCompanyForm.get('country')?.touched">
+            {{'RegistriesModule.CountryIsRequired' | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-action">
+        <button mat-raised-button color="primary" (click)="createCompany()">{{'RegistriesModule.CreateCompany' | translate}}</button>
+      </div>
+    </form>
+  </div>
+</div>

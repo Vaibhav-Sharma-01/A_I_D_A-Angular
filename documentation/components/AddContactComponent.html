@@ -1,0 +1,1409 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>aida-next documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">aida-next documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AddContactComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/features/registries/contact/add-contact/add-contact.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-contact</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-contact.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-contact.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addContactForm">addContactForm</a>
+                            </li>
+                            <li>
+                                <a href="#contact">contact</a>
+                            </li>
+                            <li>
+                                <a href="#countries">countries</a>
+                            </li>
+                            <li>
+                                <a href="#countryValue">countryValue</a>
+                            </li>
+                            <li>
+                                <a href="#filteredCountry">filteredCountry</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#jsonConvert">jsonConvert</a>
+                            </li>
+                            <li>
+                                <a href="#managers">managers</a>
+                            </li>
+                            <li>
+                                <a href="#messages">messages</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_filter">_filter</a>
+                            </li>
+                            <li>
+                                <a href="#addContactFormInit">addContactFormInit</a>
+                            </li>
+                            <li>
+                                <a href="#createContact">createContact</a>
+                            </li>
+                            <li>
+                                <a href="#filterCountry">filterCountry</a>
+                            </li>
+                            <li>
+                                <a href="#getManagers">getManagers</a>
+                            </li>
+                            <li>
+                                <a href="#isFormDirty">isFormDirty</a>
+                            </li>
+                            <li>
+                                <a href="#isFormValid">isFormValid</a>
+                            </li>
+                            <li>
+                                <a href="#makeFormPristine">makeFormPristine</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#selectCountry">selectCountry</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, registriesApis: <a href="../injectables/RegistriesService.html">RegistriesService</a>, loginInUserData: <a href="../injectables/GetLoggedUserService.html">GetLoggedUserService</a>, toast: <a href="../injectables/ToastMessage.html">ToastMessage</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>registriesApis</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RegistriesService.html" target="_self" >RegistriesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loginInUserData</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GetLoggedUserService.html" target="_self" >GetLoggedUserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastMessage.html" target="_self" >ToastMessage</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_filter"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _filter
+                        </b>
+                        <a href="#_filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_filter(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addContactFormInit"></a>
+                    <span class="name">
+                        <b>
+                            addContactFormInit
+                        </b>
+                        <a href="#addContactFormInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addContactFormInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize the Add Contact Form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createContact"></a>
+                    <span class="name">
+                        <b>
+                            createContact
+                        </b>
+                        <a href="#createContact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createContact()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To create Contact</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterCountry"></a>
+                    <span class="name">
+                        <b>
+                            filterCountry
+                        </b>
+                        <a href="#filterCountry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterCountry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getManagers"></a>
+                    <span class="name">
+                        <b>
+                            getManagers
+                        </b>
+                        <a href="#getManagers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getManagers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To Get Managers </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFormDirty"></a>
+                    <span class="name">
+                        <b>
+                            isFormDirty
+                        </b>
+                        <a href="#isFormDirty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isFormDirty()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is form dirty</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFormValid"></a>
+                    <span class="name">
+                        <b>
+                            isFormValid
+                        </b>
+                        <a href="#isFormValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isFormValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is form valid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="makeFormPristine"></a>
+                    <span class="name">
+                        <b>
+                            makeFormPristine
+                        </b>
+                        <a href="#makeFormPristine"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>makeFormPristine()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Make Form Pristine</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Angular Life cycle Hooks</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectCountry"></a>
+                    <span class="name">
+                        <b>
+                            selectCountry
+                        </b>
+                        <a href="#selectCountry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectCountry(val: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>val</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addContactForm"></a>
+                        <span class="name">
+                            <b>
+                            addContactForm</b>
+                            <a href="#addContactForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="contact"></a>
+                        <span class="name">
+                            <b>
+                            contact</b>
+                            <a href="#contact"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countries"></a>
+                        <span class="name">
+                            <b>
+                            countries</b>
+                            <a href="#countries"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Countries</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countryValue"></a>
+                        <span class="name">
+                            <b>
+                            countryValue</b>
+                            <a href="#countryValue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new FormControl(&#x27;&#x27;)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filteredCountry"></a>
+                        <span class="name">
+                            <b>
+                            filteredCountry</b>
+                            <a href="#filteredCountry"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any[]&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jsonConvert"></a>
+                        <span class="name">
+                            <b>
+                            jsonConvert</b>
+                            <a href="#jsonConvert"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>JsonConvert</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="managers"></a>
+                        <span class="name">
+                            <b>
+                            managers</b>
+                            <a href="#managers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messages"></a>
+                        <span class="name">
+                            <b>
+                            messages</b>
+                            <a href="#messages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/features/registries/contact/add-contact/add-contact.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { regex } from &#x27;@utils/regex&#x27;;
+// Core Modules
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, Validators, FormGroup, FormControl } from &#x27;@angular/forms&#x27;;
+
+// 3rd Party Packages
+import { JsonConvert } from &#x27;json2typescript&#x27;;
+
+//Models
+import { CreateContact } from &#x27;./../../models/create-contact.model&#x27;;
+import { LoggedInUser } from &#x27;@shared/models/logged-in-user-data.model&#x27;;
+import { Managers } from &#x27;@features/registries/models/manager.model&#x27;;
+
+//AIDA Services
+import { GetLoggedUserService } from &#x27;@shared/services/get-logged-user.service&#x27;;
+import { RegistriesService } from &#x27;@features/registries/service/registries.service&#x27;;
+import { ToastMessage } from &#x27;@shared/services/toast-message&#x27;;
+
+// Utils
+import { Countries } from &#x27;@utils/data/countries&#x27;; 
+import { Messages } from &#x27;@utils/data/message&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { map, startWith } from &#x27;rxjs/operators&#x27;;
+
+@Component({
+  selector: &#x27;app-add-contact&#x27;,
+  templateUrl: &#x27;./add-contact.component.html&#x27;,
+  styleUrls: [&#x27;./add-contact.component.scss&#x27;]
+})
+export class AddContactComponent implements OnInit {
+  addContactForm: FormGroup;
+  contact: any;
+  countryValue &#x3D; new FormControl(&#x27;&#x27;);
+  filteredCountry: Observable&lt;any[]&gt;;
+  isLoading: boolean &#x3D; false;
+  jsonConvert: JsonConvert;
+  managers: any;
+  messages: any;
+  user: any;
+  countries &#x3D; Countries;
+
+  /**
+   * Constructor
+   */
+  constructor(
+    private fb: FormBuilder,
+    private registriesApis: RegistriesService,
+    private loginInUserData: GetLoggedUserService, 
+    private toast: ToastMessage
+  ) { }
+
+  /**
+   * Angular Life cycle Hooks
+   */
+  ngOnInit(): void {
+    this.messages &#x3D; Messages.en.contact;
+    this.jsonConvert &#x3D; new JsonConvert();
+    this.addContactFormInit();
+    this.getManagers();
+    this.filterCountry();
+  }
+
+  filterCountry() {
+    this.filteredCountry &#x3D; this.countryValue.valueChanges.pipe(
+      startWith(&#x27;&#x27;), map((value: any)&#x3D;&gt; this._filter(value))
+    );
+  }
+
+  /**
+   * Initialize the Add Contact Form
+   */
+  addContactFormInit(): void {
+    this.addContactForm &#x3D; this.fb.group({
+      name: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.TITLECASE)]],
+      email: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.EMAIL)]],
+      manager: [&#x27;&#x27;, Validators.required],
+      phoneNumber: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.PHONE)]],
+      country: [&#x27;&#x27;, Validators.required],
+    });
+  }
+
+  selectCountry(val: any) {
+    console.log(val);
+    this.addContactForm.patchValue({
+      country: val.name
+    });
+  }
+
+  /**
+   * To Get Managers 
+   */
+  getManagers(): void {
+    this.loginInUserData.getLoginUserData().subscribe((res) &#x3D;&gt; {
+      this.user &#x3D; this.jsonConvert.deserializeObject(res, LoggedInUser);
+      this.registriesApis.getAllAdmin(this.user.tenantId).subscribe(
+        (res: any) &#x3D;&gt; {
+          this.managers &#x3D; this.jsonConvert.deserialize(res.data, Managers);
+          this.addContactForm.patchValue({
+            manager: this.user.id,
+          });
+        },
+        (err: any) &#x3D;&gt; {
+          this.toast.open(&#x60;${this.messages.error.unableToGet} Managers&#x60;, &#x27;error&#x27;)
+        }
+      );
+    });
+  }
+
+  /**
+   * Is form valid
+   */
+  isFormValid(): boolean {
+    return this.addContactForm.valid;
+  }
+
+  /**
+   * Is form dirty
+   */
+  isFormDirty(): boolean {
+    return this.addContactForm.dirty;
+  }
+
+  /**
+   * Make Form Pristine
+   */
+  makeFormPristine(): void {
+    return this.addContactForm.markAsPristine();
+  }
+
+  /**
+   *  To create Contact
+   */
+  createContact(): void {
+    if (this.isFormValid()) {
+      this.contact &#x3D; this.jsonConvert.deserializeObject(
+        this.addContactForm.value,
+        CreateContact
+      );
+      Object.assign(this.contact, {tenantId: this.user.tenantId, userId: this.user.id});
+      this.registriesApis.createContact(this.contact).subscribe(
+        (res: any) &#x3D;&gt; {
+          this.registriesApis.registriesSubject.next(&#x27;closeContact&#x27;);
+          this.toast.open(this.messages.success.added, &#x27;close&#x27;)
+        },
+        (err: any) &#x3D;&gt; {
+          this.toast.open(this.messages.error.unableToAdd, &#x27;close&#x27;);
+        }
+      );
+    }
+  }
+
+  private _filter(value: string): any[] {
+    const filterValue &#x3D; value.toLowerCase();
+
+    return this.countries.filter(option &#x3D;&gt; option.name.toLowerCase().includes(filterValue));
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;add-company-form&quot;&gt;
+  &lt;div class&#x3D;&quot;loader-wrapper&quot; *ngIf&#x3D;&quot;isLoading&quot;&gt;
+    &lt;app-aida-loader&gt;&lt;/app-aida-loader&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;outer-form-body&quot;&gt;
+    &lt;form [formGroup]&#x3D;&quot;addContactForm&quot;&gt;
+      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+          &lt;mat-label&gt;Name&lt;/mat-label&gt;
+          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot;&gt;
+          &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;name&#x27;)?.invalid || this.addContactForm.get(&#x27;name&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;name&#x27;)?.errors?.required&quot;&gt;
+            First Name is required&lt;/mat-error&gt;
+            &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;name&#x27;)?.invalid || this.addContactForm.get(&#x27;name&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;name&#x27;)?.errors?.pattern&quot;&gt;
+              Name should be in Title Case&lt;/mat-error&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+          &lt;mat-label&gt;Email&lt;/mat-label&gt;
+          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;email&quot;&gt;
+          &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;email&#x27;)?.invalid || this.addContactForm.get(&#x27;email&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;email&#x27;)?.errors?.required&quot;&gt;
+            Email is required&lt;/mat-error&gt;
+            &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;email&#x27;)?.invalid || this.addContactForm.get(&#x27;email&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;email&#x27;)?.errors?.pattern&quot;&gt;
+              Email Should Be in Proper Format&lt;/mat-error&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+          &lt;mat-label&gt;Mobile&lt;/mat-label&gt;
+          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;phoneNumber&quot;&gt;
+          &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;phoneNumber&#x27;)?.invalid || this.addContactForm.get(&#x27;phoneNumber&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;phoneNumber&#x27;)?.errors?.required&quot;&gt;
+            Mobile is required&lt;/mat-error&gt;
+            &lt;mat-error *ngIf&#x3D;&quot;(this.addContactForm.get(&#x27;phoneNumber&#x27;)?.invalid || this.addContactForm.get(&#x27;phoneNumber&#x27;)?.touched) &amp;&amp; this.addContactForm.get(&#x27;phoneNumber&#x27;)?.errors?.pattern&quot;&gt;
+              Mobile Should be in proper Format&lt;/mat-error&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+          &lt;mat-label&gt;Manager&lt;/mat-label&gt;
+          &lt;mat-select formControlName&#x3D;&quot;manager&quot;&gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let manager of managers&quot; [value]&#x3D;&quot;manager.id&quot;&gt;
+              {{ manager.name | titlecase }}
+            &lt;/mat-option&gt;
+          &lt;/mat-select&gt;
+          &lt;mat-error *ngIf&#x3D;&quot;this.addContactForm.get(&#x27;manager&#x27;)?.invalid || this.addContactForm.get(&#x27;manager&#x27;)?.touched&quot;&gt;
+            Manager is required&lt;/mat-error&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
+          &lt;mat-label&gt;Country&lt;/mat-label&gt;
+          &lt;mat-select formControlName&#x3D;&quot;country&quot;&gt;
+            &lt;mat-option&gt;
+              &lt;ngx-mat-select-search [formControl]&#x3D;&quot;countryValue&quot;&gt;&lt;/ngx-mat-select-search&gt;
+            &lt;/mat-option&gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let country of filteredCountry | async&quot; [value]&#x3D;&quot;country.name&quot;&gt;
+              {{ country.name | titlecase }}
+            &lt;/mat-option&gt;
+          &lt;/mat-select&gt;
+          &lt;mat-error *ngIf&#x3D;&quot;this.addContactForm.get(&#x27;country&#x27;)?.invalid || this.addContactForm.get(&#x27;country&#x27;)?.touched&quot;&gt;
+            Country is required&lt;/mat-error&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;form-action&quot;&gt;
+        &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;createContact()&quot;&gt;Create Contact&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-contact.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.add-company-form {
+  padding: 10px 15px;
+  .form-action {
+    text-align: right;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="add-company-form">  <div class="loader-wrapper" *ngIf="isLoading">    <app-aida-loader></app-aida-loader>  </div>  <div class="outer-form-body">    <form [formGroup]="addContactForm">      <div class="form-field">        <mat-form-field appearance="legacy">          <mat-label>Name</mat-label>          <input matInput type="text" formControlName="name">          <mat-error *ngIf="(this.addContactForm.get(\'name\')?.invalid || this.addContactForm.get(\'name\')?.touched) && this.addContactForm.get(\'name\')?.errors?.required">            First Name is required</mat-error>            <mat-error *ngIf="(this.addContactForm.get(\'name\')?.invalid || this.addContactForm.get(\'name\')?.touched) && this.addContactForm.get(\'name\')?.errors?.pattern">              Name should be in Title Case</mat-error>        </mat-form-field>      </div>      <div class="form-field">        <mat-form-field appearance="legacy">          <mat-label>Email</mat-label>          <input matInput type="text" formControlName="email">          <mat-error *ngIf="(this.addContactForm.get(\'email\')?.invalid || this.addContactForm.get(\'email\')?.touched) && this.addContactForm.get(\'email\')?.errors?.required">            Email is required</mat-error>            <mat-error *ngIf="(this.addContactForm.get(\'email\')?.invalid || this.addContactForm.get(\'email\')?.touched) && this.addContactForm.get(\'email\')?.errors?.pattern">              Email Should Be in Proper Format</mat-error>        </mat-form-field>      </div>      <div class="form-field">        <mat-form-field appearance="legacy">          <mat-label>Mobile</mat-label>          <input matInput type="text" formControlName="phoneNumber">          <mat-error *ngIf="(this.addContactForm.get(\'phoneNumber\')?.invalid || this.addContactForm.get(\'phoneNumber\')?.touched) && this.addContactForm.get(\'phoneNumber\')?.errors?.required">            Mobile is required</mat-error>            <mat-error *ngIf="(this.addContactForm.get(\'phoneNumber\')?.invalid || this.addContactForm.get(\'phoneNumber\')?.touched) && this.addContactForm.get(\'phoneNumber\')?.errors?.pattern">              Mobile Should be in proper Format</mat-error>        </mat-form-field>      </div>      <div class="form-field">        <mat-form-field appearance="legacy">          <mat-label>Manager</mat-label>          <mat-select formControlName="manager">            <mat-option *ngFor="let manager of managers" [value]="manager.id">              {{ manager.name | titlecase }}            </mat-option>          </mat-select>          <mat-error *ngIf="this.addContactForm.get(\'manager\')?.invalid || this.addContactForm.get(\'manager\')?.touched">            Manager is required</mat-error>        </mat-form-field>      </div>      <div class="form-field">        <mat-form-field appearance="fill">          <mat-label>Country</mat-label>          <mat-select formControlName="country">            <mat-option>              <ngx-mat-select-search [formControl]="countryValue"></ngx-mat-select-search>            </mat-option>            <mat-option *ngFor="let country of filteredCountry | async" [value]="country.name">              {{ country.name | titlecase }}            </mat-option>          </mat-select>          <mat-error *ngIf="this.addContactForm.get(\'country\')?.invalid || this.addContactForm.get(\'country\')?.touched">            Country is required</mat-error>        </mat-form-field>      </div>      <div class="form-action">        <button mat-raised-button color="primary" (click)="createContact()">Create Contact</button>      </div>    </form>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActivitiesComponent', 'selector': 'app-activities'},{'name': 'AddCompanyComponent', 'selector': 'app-add-company'},{'name': 'AddContactComponent', 'selector': 'app-add-contact'},{'name': 'AddWidgetsDialogComponent', 'selector': 'app-add-widgets-dialog'},{'name': 'AidaLoaderComponent', 'selector': 'app-aida-loader'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssociatedContactComponent', 'selector': 'app-associated-contact'},{'name': 'AttachmentsComponent', 'selector': 'app-attachments'},{'name': 'AuthenticationComponent', 'selector': 'app-authentication'},{'name': 'BreadcrumbsComponent', 'selector': 'app-breadcrumbs'},{'name': 'CompaniesComponent', 'selector': 'app-companies'},{'name': 'CompanyComponent', 'selector': 'app-company'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContactsComponent', 'selector': 'app-contacts'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DeleteDialogComponent', 'selector': 'app-delete-dialog'},{'name': 'DriveComponent', 'selector': 'app-drive'},{'name': 'EmailComponent', 'selector': 'app-email'},{'name': 'EmailsComponent', 'selector': 'app-emails'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'ForgotPasswordStepFirstComponent', 'selector': 'app-forgot-password-step-first'},{'name': 'ForgotPasswordStepSecondComponent', 'selector': 'app-forgot-password-step-second'},{'name': 'GeneralEmailComponent', 'selector': 'app-general-email'},{'name': 'GeneralPhoneComponent', 'selector': 'app-general-phone'},{'name': 'GeneralSharedComponent', 'selector': 'app-general-shared'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HumanResourceComponent', 'selector': 'app-human-resource'},{'name': 'InformationComponent', 'selector': 'app-information'},{'name': 'ListsComponent', 'selector': 'app-lists'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBodyComponent', 'selector': 'app-main-body'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'OpportunityComponent', 'selector': 'app-opportunity'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'QuickMenuComponent', 'selector': 'app-quick-menu'},{'name': 'RegistriesComponent', 'selector': 'app-registries'},{'name': 'RelatedCompaniesComponent', 'selector': 'app-related-companies'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SideSlideComponent', 'selector': 'app-side-slide'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SubHeaderMenuComponent', 'selector': 'app-sub-header-menu'},{'name': 'TabsComponent', 'selector': 'app-tabs'},{'name': 'TasksComponent', 'selector': 'app-tasks'},{'name': 'TenantComponent', 'selector': 'app-tenant'},{'name': 'TenantsComponent', 'selector': 'app-tenants'},{'name': 'TestComponent', 'selector': 'app-test'},{'name': 'TimeTrackingComponent', 'selector': 'app-time-tracking'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'WebsiteComponent', 'selector': 'app-website'},{'name': 'WidgetsComponent', 'selector': 'app-widgets'},{'name': 'WidgetsSharedComponent', 'selector': 'app-widgets-shared'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AddContactComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddContactComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

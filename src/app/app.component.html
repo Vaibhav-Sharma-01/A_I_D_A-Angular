@@ -1,0 +1,7 @@
+<div class="slide-bottom-to-top" [ngClass]="{ open: open }" #featureSlideUpElm>
+  <!-- <app-call *ngIf="slideUpGeneral === 'phone'" ></app-call> -->
+  <app-call [phoneNumber]="callingNumber" *ngIf="openCalling && open"></app-call>
+  <app-mail *ngIf="openMail && open"></app-mail>
+</div>
+
+<router-outlet></router-outlet>

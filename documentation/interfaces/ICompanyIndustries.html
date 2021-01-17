@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>aida-next documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">aida-next documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>ICompanyIndustries</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/components/features/registries/companies/add-company/add-company.component.ts</code>
+        </p>
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#id">id</a>
+                                </li>
+                                <li>
+                                        <a href="#value">value</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="id"></a>
+                                        <span class="name"><b>id</b><a href="#id"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>id:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="value"></a>
+                                        <span class="name"><b>value</b><a href="#value"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>value:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FormControl } from &#x27;@angular/forms&#x27;;
+// Core Modules
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+
+// 3rd Party Module
+import { JsonConvert } from &#x27;json2typescript&#x27;;
+
+// 3rd Party Service
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+
+
+// Models
+import { CreateCompany } from &#x27;../../models/create-company.model&#x27;;
+import { LoggedInUser } from &#x27;@shared/models/logged-in-user-data.model&#x27;;
+import { Managers } from &#x27;../../models/manager.model&#x27;;
+
+// AIDA Module
+import { ToastMessage } from &#x27;@shared/services/toast-message&#x27;;
+
+// Utils
+import { Countries } from &#x27;@utils/data/countries&#x27;; 
+import { Messages } from &#x27;@utils/data/message&#x27;;
+import { regex } from &#x27;@utils/regex&#x27;;
+
+// AIDA Services
+import { RegistriesService } from &#x27;./../../service/registries.service&#x27;;
+import { GetLoggedUserService } from &#x27;@shared/services/get-logged-user.service&#x27;;
+
+// rxjs Operators
+import { Observable } from &#x27;rxjs&#x27;;
+import { map, startWith } from &#x27;rxjs/operators&#x27;;
+
+// Interface
+interface ICompanyIndustries {
+  id: string;
+  value: string;
+}
+
+@Component({
+  selector: &#x27;app-add-company&#x27;,
+  templateUrl: &#x27;./add-company.component.html&#x27;,
+  styleUrls: [&#x27;./add-company.component.scss&#x27;],
+})
+export class AddCompanyComponent implements OnInit {
+  addCompanyForm: FormGroup;
+  company: any;
+  countryValue &#x3D; new FormControl(&#x27;&#x27;)
+  filteredCountry: Observable&lt;any[]&gt;;
+  isLoading: boolean &#x3D; false;
+  jsonConvert: JsonConvert;
+  managers: any;
+  messages: any;
+  user: any;
+  preferredLanguage: String &#x3D; &#x27;en&#x27;;
+
+  companyIndustries: ICompanyIndustries[] &#x3D; [
+    { id: &#x27;1&#x27;, value: &#x27;S.P.A&#x27; },
+    { id: &#x27;2&#x27;, value: &#x27;S.R.L&#x27; },
+    { id: &#x27;3&#x27;, value: &#x27;S.S&#x27; },
+    { id: &#x27;4&#x27;, value: &#x27;S.E&#x27; },
+  ];
+
+  countries &#x3D; Countries;
+
+  /**
+   * Constructor
+   */
+  constructor(
+    private fb: FormBuilder,
+    private loginInUserData: GetLoggedUserService,
+    private registriesApis: RegistriesService,
+    private toast: ToastMessage,
+    private translateService: TranslateService
+  ) { }
+
+  /**
+   * Lifecycle hooks
+   */
+  ngOnInit(): void {
+    this.jsonConvert &#x3D; new JsonConvert();
+    this.addCompanyFormInit();
+    this.getManagers();
+    this.messages &#x3D; Messages.en;
+    this.countryFilter();
+  }
+
+  countryFilter() {
+    this.filteredCountry &#x3D; this.countryValue.valueChanges.pipe(
+      startWith(&#x27;&#x27;), map((value: any) &#x3D;&gt; this._filter(value) )
+    );
+  }
+
+  /**
+   * Add company form init
+   */
+  addCompanyFormInit() {
+    this.addCompanyForm &#x3D; this.fb.group({
+      name: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.TITLECASE)]],
+      email: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.EMAIL)]],
+      manager: [&#x27;&#x27;],
+      phoneNumber: [&#x27;&#x27;, [Validators.required, Validators.pattern(regex.PHONE)]],
+      typology: [&#x27;&#x27;, Validators.required],
+      country: [&#x27;&#x27;, Validators.required],
+      vatNumber: [&#x27;&#x27;, Validators.required],
+    });
+  }
+
+  /**
+   * Is form valid
+   */
+  isFormValid() {
+    return this.addCompanyForm.valid;
+  }
+
+  /**
+   * Is form dirty
+   */
+  isFormDirty() {
+    return this.addCompanyForm.dirty;
+  }
+
+  /**
+   * To make form Pristine
+   */
+  makeFormPristine(){
+    return this.addCompanyForm.markAsPristine();
+  }
+
+  /**
+   * Get Managers
+   */
+  getManagers() {
+    this.loginInUserData.getLoginUserData().subscribe((res) &#x3D;&gt; {
+      this.user &#x3D; this.jsonConvert.deserializeObject(res, LoggedInUser);
+      this.preferredLanguage &#x3D; this.user?.preferredLanguage;
+      this.registriesApis.getAllAdmin(this.user.tenantId).subscribe(
+        (res: any) &#x3D;&gt; {
+          this.managers &#x3D; this.jsonConvert.deserialize(res.data, Managers);
+          this.addCompanyForm.patchValue({
+            manager: this.user.id,
+          });
+        },
+        (err: any) &#x3D;&gt; {
+          this.toast.open(this.messages.company.error.unableToGet, &#x27;error&#x27;);
+        }
+      );
+    });
+  }
+
+  /**
+   * Create Company
+   */
+  createCompany() {
+    if (!this.isFormValid()) {
+      return;
+    }
+    this.company &#x3D; this.jsonConvert.deserializeObject(this.addCompanyForm.value, CreateCompany);
+    Object.assign(this.company, { tenantId: this.user.tenantId, userId: this.user.id });
+    this.registriesApis.createCompany(this.company).subscribe(
+      (res: any) &#x3D;&gt; {
+        this.registriesApis.registriesSubject.next(&#x27;closeCompany&#x27;);
+      },
+      (err: any) &#x3D;&gt; {
+        this.toast.open(this.messages.company.error.unableToAdd, &#x27;error&#x27;);
+      }
+    );
+  }
+
+  /**
+   * To filter values that matches the input text
+   * @param {string} value Input text
+   */
+  private _filter(value: string): any[] {
+    const filterValue &#x3D; value.toLowerCase();
+    return this.countries.filter(option &#x3D;&gt; option.name.toLowerCase().includes(filterValue));
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'ICompanyIndustries.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

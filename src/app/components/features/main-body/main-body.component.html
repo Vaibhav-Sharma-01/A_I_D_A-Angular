@@ -1,0 +1,30 @@
+<div class="main-body">
+  <div class="sidebar" [class.close]="isSidebarOpen">
+    <div class="open-close-sidebar">
+      <a (click)="toggleSidebar()">
+        <mat-icon *ngIf="!isSidebarOpen">chevron_left</mat-icon>
+        <mat-icon *ngIf="isSidebarOpen">chevron_right</mat-icon>
+      </a>
+    </div>
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="main-content">
+    <div class="header-container-wrapper">
+      <app-header></app-header>
+    </div>
+    <div class="body-container-wrapper">
+      <div class="body-top-section">
+        <div class="sub-header-menu">
+          <app-sub-header-menu></app-sub-header-menu>
+        </div>
+        <div class="breadcrumb">
+          <app-breadcrumbs></app-breadcrumbs>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer-container-wrapper">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

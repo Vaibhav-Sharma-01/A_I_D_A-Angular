@@ -1,0 +1,25 @@
+.company-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 40px);
+  padding: 15px 0;
+  & > div {
+    background: #f5f7f9;
+    height: 100%;
+  }
+  .company-all-information {
+    position: relative;
+  }
+  .gap-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .gap-6 {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+  .company-all-information,
+  .company-tabs {
+    margin-right: 15px;
+  }
+}

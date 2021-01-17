@@ -1,0 +1,9 @@
+<div class="breadcrumb-inner-wrapper">
+  <ul>
+    <li *ngFor="let breadcrumb of breadcrumbs">
+      <a routerLink="{{breadcrumb.url}}">
+        {{ breadcrumb.label | titlecase }}
+      </a>
+    </li>
+  </ul>
+</div>

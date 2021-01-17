@@ -1,0 +1,228 @@
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  21% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-20deg);
+  }
+
+  41% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(-20deg);
+  }
+
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    width: 130px;
+    height: 130px;
+    transform: translate(-25px, -25px);
+    opacity: 1;
+    border-width: 8px;
+  }
+
+  100% {
+    width: 320px;
+    height: 320px;
+    transform: translate(-120px, -120px);
+    opacity: 0.2;
+    border-width: 15px;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.phone-wrapper {
+  user-select: none;
+  .digits {
+    overflow: hidden;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    .dig.pound {
+      padding-top: 10px;
+      height: 56px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      justify-content: center;
+    }
+    .dig {
+      color: white;
+      font-size: 30px;
+      float: left;
+      background-color: #2d2d2d;
+      text-align: center;
+      width: 60px;
+      height: 56px;
+      border-radius: 100%;
+      margin: 10px 0px;
+      padding-top: 4px;
+      font-weight: 700;
+      cursor: pointer;
+      font-weight: 400;
+      &:nth-child(3n-1) {
+        margin: 10px calc(50% - 90px);
+      }
+      .sub-dig {
+        font-size: 10px;
+        font-weight: 300;
+        position: relative;
+        top: -2px;
+      }
+      &.addPerson {
+        background-color: #285efa;
+      }
+      &.goBack {
+        background-color: #fa4a5d;
+      }
+      &.call {
+        background-color: #3de067;
+      }
+    }
+    .dig-spacer {
+      width: 60px;
+      margin: 10px calc(50% - 90px);
+      float: left;
+    }
+  }
+
+  .phoneString {
+    width: 100%;
+    height: 80px;
+    background-color: #2d2d2d;
+    margin-top: 40px;
+    position: relative;
+    input {
+      background-color: transparent;
+      width: 100%;
+      height: 80px;
+      border: none;
+      font-size: 30px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 2px;
+      outline: 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .phone-required {
+      color: #ef7166;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    mat-icon {
+      position: relative;
+      top: -2px;
+    }
+  }
+  .dialing {
+    .animation {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      border-radius: 50%;
+    }
+    .dialing-animation {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-color: transparent;
+      .ring {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("/assets/phone.png");
+        -webkit-animation: ring 0.6s infinite;
+        -o-animation: ring 0.6s infinite;
+        animation: ring 0.6s infinite;
+      }
+      .circle {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        transform: translate(-25px, -25px);
+        border-radius: 50%;
+        border: 10px solid #f5f7f9;
+        background-color: transparent;
+        -webkit-animation: wave 1.4s infinite linear;
+        -o-animation: wave 1.4s infinite linear;
+        animation: wave 1.4s infinite linear;
+        &.two {
+          animation-delay: 0.35s;
+          opacity: 0;
+        }
+        &.three {
+          animation-delay: 0.7s;
+          opacity: 0;
+        }
+      }
+    }
+    .calling-to {
+      padding: 50px 0 20px;
+      text-align: center;
+      font-size: 25px;
+      color: #fff;
+    }
+    .cut-phone {
+      width: 60px;
+      height: 60px;
+      background: #fa4a5d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      margin: 0 auto;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

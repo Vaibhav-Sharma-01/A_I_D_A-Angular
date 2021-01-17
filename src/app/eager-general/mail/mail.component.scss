@@ -1,0 +1,53 @@
+.email-form {
+  padding: 40px 15px;
+  position: relative;
+  z-index: 999;
+  .cm-mail-close-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #ef7166;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.cm-mail-minimize-btn:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 2px;
+  background-color: #fff;
+}
+.cm-mail-minimize-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #ef7166;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 32px;
+  cursor: pointer;
+}
+  .form-action {
+    text-align: right;
+    margin-top: 2vh;
+  }
+}
+.right{
+float: right;
+margin-left: 1%;
+cursor: pointer;
+}
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 300px !important;
+}

@@ -1,0 +1,64 @@
+<div class="phone-wrapper">
+  <div class="phone-close-btn"><mat-icon>keyboard_arrow_down</mat-icon></div>
+  <div class="dial-pad-wrapper" *ngIf="!isCalling">
+    <div class="phoneString">
+      <input type="text"  [(ngModel)]="phoneInput">
+      <div class="phone-required" *ngIf="!isPhoneValid">Phone is required and should be valid.</div>
+    </div>
+    <div class="digits">
+      <div class="dig pound number-dig" name="1" (click)="num('1')">1</div>
+      <div class="dig number-dig" name="2" (click)="num('2')">2
+        <div class="sub-dig">ABC</div>
+      </div>
+      <div class="dig number-dig" name="3" (click)="num('3')">3
+        <div class="sub-dig">DEF</div>
+      </div>
+      <div class="dig number-dig" name="4" (click)="num('4')">4
+        <div class="sub-dig">GHI</div>
+      </div>
+      <div class="dig number-dig" name="5" (click)="num('5')">5
+        <div class="sub-dig">JKL</div>
+      </div>
+      <div class="dig number-dig" name="6" (click)="num('6')">6
+        <div class="sub-dig">MNO</div>
+      </div>
+      <div class="dig number-dig" name="7" (click)="num('7')">7
+        <div class="sub-dig">PQRS</div>
+      </div>
+      <div class="dig number-dig" name="8" (click)="num('8')">8
+        <div class="sub-dig">TUV</div>
+      </div>
+      <div class="dig number-dig" name="9" (click)="num('9')">9
+        <div class="sub-dig">WXYZ</div>
+      </div>
+      <div class="dig number-dig astrisk" name="*" (click)="num('+')">+</div>
+      <div class="dig number-dig pound" name="0" (click)="num('0')">0</div>
+      <div class="dig number-dig pound" name="#" (click)="num('#')">#</div>
+    </div>
+    <div class="digits">
+      <div class="dig addPerson action-dig"></div>
+      <div class="dig dig-spacer call center" matTooltip="Call">
+        <mat-icon>phone</mat-icon>
+      </div>
+      <div class="dig goBack action-dig center" (click)="clearAll()" matTooltip="Clear All">
+        <mat-icon>clear_all</mat-icon>
+      </div>
+    </div>
+  </div>
+  <div class="dialing" *ngIf="isCalling">
+    <div class="calling-to">{{ phone }}</div>
+    <div class="dialing-animation">
+      <div class="animation">
+        <span class="icon ring"></span>
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+      </div>
+    </div>
+    <div class="cut-phone" (click)="callEnd()"  matTooltip="Call End">
+      <div class="phone-call-end">
+        <mat-icon>call_end</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

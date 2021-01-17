@@ -1,0 +1,47 @@
+<header>
+  <div class="header-container">
+    <div class="header-content">
+      <div class="add-task">
+        <a [matMenuTriggerFor]="gotoWidget"><i class="fa fa-plus" aria-hidden="true"></i></a>
+      </div>
+      <div class="info">
+        <a [matMenuTriggerFor]="help">
+          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="time-tracking">
+        <div class="date-sec">
+          <span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+        </div>
+      </div>
+      <div class="author-image">
+        <div class="author">
+          <a [title]="user.name | titlecase" [matMenuTriggerFor]="userMenu"><img src="../../../../assets/default-user.jpg" alt="author"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<mat-menu #userMenu="matMenu">
+  <button mat-menu-item routerLink="/registries/user">
+    <mat-icon>person</mat-icon>
+    <span>{{ "CommonModule.Profile" | translate}}</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>admin_panel_settings</mat-icon>
+    <span>{{ "CommonModule.Account" | translate}}</span>
+  </button>
+  <button mat-menu-item routerLink="/auth" (click)="logout()">
+    <mat-icon>login</mat-icon>
+    <span>{{ "CommonModule.Logout" | translate}}</span>
+  </button>
+</mat-menu>
+
+<mat-menu #gotoWidget="matMenu">
+  <app-quick-menu></app-quick-menu>
+</mat-menu>
+
+<mat-menu #help="matMenu" yPosition="below" class="help-dropdown-wrapper">
+  <app-help></app-help>
+</mat-menu>

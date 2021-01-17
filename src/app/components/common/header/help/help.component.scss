@@ -1,0 +1,18 @@
+.app-help-wrapper {
+  width: 400px;
+  min-height: 500px;
+  .help-header {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .help-icon {
+      mat-icon {
+        font-size: 55px;
+      }
+    }
+    .help-text {
+      font-size: 18px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}

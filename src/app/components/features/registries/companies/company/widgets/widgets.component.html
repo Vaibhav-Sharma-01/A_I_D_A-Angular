@@ -1,0 +1,45 @@
+<div class="contact-widgets-area">
+  <mat-accordion multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ "RegistriesModule.AssociatedContacts" | translate}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <app-associated-contact></app-associated-contact>
+      </div>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ "RegistriesModule.RelatedCompanies" | translate}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <app-related-companies></app-related-companies>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ "RegistriesModule.Attachments" | translate}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <app-attachments></app-attachments>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="add-widgets-event" (click)="openAddWidgetDialog()">
+    <div class="icon"><mat-icon>add</mat-icon></div>
+    <div class="text">{{ "RegistriesModule.AddWidgets" | translate}}</div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="cm-login-page-wrapper">
+  <div class="cm-auth-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cm-auth-main-wrap">
+            <div class="cm-auth-content">
+              <div class="cm-auth-wrapper-inner">
+                <div class="cm-auth-logo-area">
+                  <div class="logo-wrap"><img src="assets/aida-logo.svg" alt="AIDA Logo"></div>
+                  <div class="side-content">
+                    <h5>{{"AuthenticationModule.ItsNiceToSeeYouAgain" | translate}}</h5>
+                    <h2>{{"AuthenticationModule.WELL BACK" | translate}}</h2>
+                  </div>
+                </div>
+                <div class="cm-auth-form-area">
+                  <div class="auth-loader" *ngIf="loader">
+                    <app-loader></app-loader>
+                  </div>
+                  <div class="main-auth-area" *ngIf="!loader">
+                    <div class="cm-client-logo">
+
+                    </div>
+                    <div class="cm-auth-form-heading">
+                      <h3>{{"AuthenticationModule.SignUpToAIDA" | translate}}</h3>
+                    </div>
+                    <div class="cm-auth-form">
+                      <form [formGroup]="signupForm">
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Name" | translate}}</mat-label>
+                          <input matInput  formControlName="name">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Email" | translate}}</mat-label>
+                          <input matInput type="email"  formControlName="email">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Password" | translate}}</mat-label>
+                          <input matInput type="email" type="password" formControlName="password">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.ConfirmPassword" | translate}}</mat-label>
+                          <input matInput type="email" type="password" formControlName="passwordConfirm">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Mobile" | translate}}</mat-label>
+                          <input matInput type="text" inputmode="tel" formControlName="mobile">
+                        </mat-form-field>
+                        <button mat-raised-button color="primary" class="auth-btn" (click)="signup()">{{"AuthenticationModule.SignUp" | translate}}</button>
+                      </form>
+                      <div class="login-action">
+                       {{"AuthenticationModule.AleradyAUser" | translate}} <a routerLink="/" class="login">{{"AuthenticationModule.Login" | translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

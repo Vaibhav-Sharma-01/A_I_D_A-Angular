@@ -1,0 +1,71 @@
+<div class="add-company-form">
+  <div class="loader-wrapper" *ngIf="isLoading">
+    <app-aida-loader></app-aida-loader>
+  </div>
+  <div class="outer-form-body">
+    <form [formGroup]="addContactForm">
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{ "RegistriesModule.Name" | translate}}</mat-label>
+          <input matInput type="text" formControlName="name">
+          <mat-error *ngIf="(this.addContactForm.get('name')?.invalid || this.addContactForm.get('name')?.touched) && this.addContactForm.get('name')?.errors?.required">
+            {{ "RegistriesModule.FirstNameIsRequired" | translate}}</mat-error>
+            <mat-error *ngIf="(this.addContactForm.get('name')?.invalid || this.addContactForm.get('name')?.touched) && this.addContactForm.get('name')?.errors?.pattern">
+              {{ "RegistriesModule.NameShouldBeInTitleCase" | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{ "RegistriesModule.Email" | translate}}</mat-label>
+          <input matInput type="text" formControlName="email">
+          <mat-error *ngIf="(this.addContactForm.get('email')?.invalid || this.addContactForm.get('email')?.touched) && this.addContactForm.get('email')?.errors?.required">
+            {{ "RegistriesModule.EmailIsRequired" | translate}}</mat-error>
+            <mat-error *ngIf="(this.addContactForm.get('email')?.invalid || this.addContactForm.get('email')?.touched) && this.addContactForm.get('email')?.errors?.pattern">
+              {{ "RegistriesModule.EmailShouldBeInProperFormat" | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{ "RegistriesModule.Mobile" | translate}}</mat-label>
+          <input matInput type="text" formControlName="phoneNumber">
+          <mat-error *ngIf="(this.addContactForm.get('phoneNumber')?.invalid || this.addContactForm.get('phoneNumber')?.touched) && this.addContactForm.get('phoneNumber')?.errors?.required">
+            {{ "RegistriesModule.MobileIsRequired" | translate}}</mat-error>
+            <mat-error *ngIf="(this.addContactForm.get('phoneNumber')?.invalid || this.addContactForm.get('phoneNumber')?.touched) && this.addContactForm.get('phoneNumber')?.errors?.pattern">
+              {{ "RegistriesModule.MobileShouldBeInProperFormat" | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>{{ "RegistriesModule.Manager" | translate}}</mat-label>
+          <mat-select formControlName="manager">
+            <mat-option *ngFor="let manager of managers" [value]="manager.id">
+              {{ manager.name | titlecase }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.addContactForm.get('manager')?.invalid || this.addContactForm.get('manager')?.touched">
+            {{ "RegistriesModule.ManagerIsRequired" | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>{{ "RegistriesModule.Country" | translate}}</mat-label>
+          <mat-select formControlName="country">
+            <mat-option>
+              <ngx-mat-select-search [formControl]="countryValue"></ngx-mat-select-search>
+            </mat-option>
+            <mat-option *ngFor="let country of filteredCountry | async" [value]="country.name">
+              {{ country.name | titlecase }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.addContactForm.get('country')?.invalid || this.addContactForm.get('country')?.touched">
+            {{ "RegistriesModule.CountryIsRequired" | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-action">
+        <button mat-raised-button color="primary" (click)="createContact()">{{ "RegistriesModule.CreateContact" | translate}}</button>
+      </div>
+    </form>
+  </div>
+</div>

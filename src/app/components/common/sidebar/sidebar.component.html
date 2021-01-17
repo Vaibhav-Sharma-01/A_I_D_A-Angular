@@ -1,0 +1,70 @@
+<div class="sidebar-header">
+  <div class="sidebar-container">
+    <div class="top-logo"> <img src="assets/sidebar-top-logo.svg" alt="Logo"> </div>
+    <div class="menu-wrapper">
+      <ul>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Dashboard')" >
+          <a routerLink="/dashboard" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Dashboard" matTooltipPosition="right">
+            <mat-icon>dashboard</mat-icon>
+            <span>{{"CommonModule.sideBar.Dashboard" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Registries')">
+          <a routerLink="/registries/companies" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Registries" matTooltipPosition="right">
+            <mat-icon>person</mat-icon>
+            <span>{{"CommonModule.sideBar.Registries" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Opportunities')">
+          <a routerLink="/opportunity" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Opportunity" matTooltipPosition="right">
+            <mat-icon>nature_people</mat-icon>
+            <span>{{"CommonModule.sideBar.Opportunity" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Human Resource')">
+          <a routerLink="/human-resource" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Human Resources" matTooltipPosition="right">
+            <mat-icon>emoji_people</mat-icon>
+            <span>{{"CommonModule.sideBar.HumanResource" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Lists')">
+          <a routerLink="/lists" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Lists" matTooltipPosition="right">
+            <mat-icon>list</mat-icon>
+            <span>{{"CommonModule.sideBar.Lists" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Projects')">
+          <a routerLink="/projects" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Projects" matTooltipPosition="right">
+            <mat-icon>markunread_mailbox</mat-icon>
+            <span>{{"CommonModule.sideBar.Projects" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Help')">
+          <a routerLink="/help" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Help" matTooltipPosition="right">
+            <mat-icon>help_center</mat-icon>
+            <span>{{"CommonModule.sideBar.Help" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Time Tracking')">
+          <a routerLink="/time-tracking" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Time Tracking" matTooltipPosition="right">
+            <mat-icon>watch_later</mat-icon>
+            <span>{{"CommonModule.sideBar.TimeTracking" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Website')">
+          <a routerLink="/website" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="Website" matTooltipPosition="right">
+            <mat-icon>sticky_note_2</mat-icon>
+            <span>{{"CommonModule.sideBar.Website" | translate}}</span>
+          </a>
+        </li>
+        <li *ngIf="this.user.role==='god' || this.user.role==='superadmin' ||this.user?.permissions.includes('Drive')">
+          <a routerLink="/drive" routerLinkActive="active" matTooltipClass="show-on-less" matTooltip="folder" matTooltipPosition="right">
+            <mat-icon>folder</mat-icon>
+            <span>{{"CommonModule.sideBar.Drive" | translate}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-logo"> <img src="assets/sidebar-bottom-logo.svg" alt="AIDA"> </div>
+  </div>
+</div>

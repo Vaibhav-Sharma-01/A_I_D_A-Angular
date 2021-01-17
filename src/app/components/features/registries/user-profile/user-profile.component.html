@@ -1,0 +1,494 @@
+<div class="loader-wrapper" *ngIf="isLoading">
+  <app-aida-loader></app-aida-loader>
+</div>
+<div class="company-wrapper">
+  <div class="company-all-information gap-full">
+    <div class="contacts-information">
+      <div class="photo">
+        <div class="photo-wrapper">
+          <form [formGroup]="profileForm">
+            <input
+              type="file"
+              style="display: none"
+              #profilePic
+              accept=".jpeg,.png"
+              (change)="profilePictureUpload($event)"
+            />
+            <img
+              src="{{ this.profileForm?.controls?.profilePicture?.value }}"
+              (click)="profilePic.click()"
+              width="80px"
+              alt="contact profile picture"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="basic-information">
+        <div class="name">
+          <form [formGroup]="profileForm">
+            <div class="form-field on-hover-edit">
+              <mat-form-field appearance="fill">
+                <div class="cm-user-name">
+                  <div class="cm-role">{{ user.role | titlecase }}:</div>
+                  <input
+                    (change)="updateContact()"
+                    matInput
+                    type="text"
+                    formControlName="name"
+                  />
+                </div>
+                <mat-error
+                  *ngIf="
+                    (this.profileForm.get('name')?.invalid ||
+                      this.profileForm.get('name')?.touched) &&
+                    this.profileForm.get('name')?.errors?.required
+                  "
+                >
+                  {{ "RegistriesModule.NameIsRequired" | translate }}</mat-error
+                >
+                <mat-error
+                  *ngIf="
+                    (this.profileForm.get('name')?.invalid ||
+                      this.profileForm.get('name')?.touched) &&
+                    this.profileForm.get('name')?.errors?.pattern
+                  "
+                >
+                  {{
+                    "RegistriesModule.NameMustBeInTitleCase" | translate
+                  }}</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </form>
+        </div>
+        <div class="website"></div>
+        <div class="actions">
+          <ul>
+            <li>
+              <a class="email" matTooltip="Add Notes">
+                <mat-icon>add</mat-icon>
+              </a>
+            </li>
+            <li>
+              <a class="email" matTooltip="Meeting">
+                <mat-icon>meeting_room</mat-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="company-form-and-view-area cm-profile-info-wrap">
+      <div class="cm-section-heading">
+        <h2>{{ "RegistriesModule.BasicInformation" | translate }}</h2>
+      </div>
+
+      <div class="expansion-content-body">
+        <form [formGroup]="profileForm">
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.FiscalCode" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="fiscalCode"
+              />
+            </mat-form-field>
+          </div>
+
+          <div class="form-field ">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Tag" | translate }}</mat-label>
+              <mat-chip-list #chipList aria-label="Tag selection">
+                <mat-chip
+                  *ngFor="let tag of tagArray?.value; let i = index"
+                  [selectable]="selectable"
+                  [removable]="removable"
+                  (removed)="remove(tag?.id, i)"
+                >
+                  {{ tag }}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <mat-select formControlName="tags" #multiSelect>
+                  <mat-option>
+                    <ngx-mat-select-search
+                      [formControl]="tagValue"
+                    ></ngx-mat-select-search>
+                  </mat-option>
+                  <mat-option
+                    *ngFor="let tag of filteredTags | async"
+                    (click)="selected(tag.value)"
+                  >
+                    {{ tag.value }}
+                  </mat-option>
+                </mat-select>
+              </mat-chip-list>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.BornIn" | translate }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="bornIn"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field
+              (click)="picker1.open()"
+              color="accent"
+              appearance="fill"
+            >
+              <mat-label>{{ "RegistriesModule.BornOn" | translate }}</mat-label>
+              <input
+                (dateChange)="updateContact()"
+                matInput
+                [disabled]="true"
+                [matDatepicker]="picker1"
+                formControlName="bornOn"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker1"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker1 [disabled]="false"></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+
+      <!-- <mat-label> <h2>{{ "RegistriesModule.MailAddress" | translate}}</h2> </mat-label> -->
+
+      <div class="expansion-content-body">
+        <form [formGroup]="profileForm">
+          <div class="form-field">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.Address" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="address"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.PostalCode" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="postalCode"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.City" | translate }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="city"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.Province" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="province"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="fill">
+              <mat-label>{{
+                "RegistriesModule.Country" | translate
+              }}</mat-label>
+              <mat-select (change)="updateContact()" formControlName="country">
+                <mat-option
+                  *ngFor="let country of countries"
+                  [value]="country.name"
+                >
+                  {{ country.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+
+      <!-- <mat-label> <h2>{{ "RegistriesModule.ContactInformation" | translate}}</h2> </mat-label> -->
+
+      <div class="expansion-content-body">
+        <form [formGroup]="profileForm">
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.PhoneNumber" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="phoneNumber"
+              />
+              <mat-error
+                *ngIf="
+                  (this.profileForm.get('phoneNumber')?.invalid ||
+                    this.profileForm.get('phoneNumber')?.touched) &&
+                  this.profileForm.get('phoneNumber')?.errors?.required
+                "
+              >
+                {{
+                  "RegistriesModule.PhoneNumberIsRequired" | translate
+                }}</mat-error
+              >
+              <mat-error
+                *ngIf="
+                  (this.profileForm.get('phoneNumber')?.invalid ||
+                    this.profileForm.get('phoneNumber')?.touched) &&
+                  this.profileForm.get('phoneNumber')?.errors?.pattern
+                "
+              >
+                {{
+                  "RegistriesModule.PhoneNumberMustBeInFormat" | translate
+                }}</mat-error
+              >
+            </mat-form-field>
+          </div>
+
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Email" | translate }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="email"
+              />
+              <mat-error
+                *ngIf="
+                  (this.profileForm.get('email')?.invalid ||
+                    this.profileForm.get('email')?.touched) &&
+                  this.profileForm.get('email')?.errors?.required
+                "
+              >
+                {{ "RegistriesModule.EmailIsRequired" | translate }}</mat-error
+              >
+              <mat-error
+                *ngIf="
+                  (this.profileForm.get('email')?.invalid ||
+                    this.profileForm.get('email')?.touched) &&
+                  this.profileForm.get('email')?.errors?.pattern
+                "
+              >
+                {{
+                  "RegistriesModule.EmailMustBeInFormat" | translate
+                }}</mat-error
+              >
+            </mat-form-field>
+          </div>
+
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Pec" | translate }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="pec"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.FacebookURL" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="facebookUrl"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field ">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{
+                "RegistriesModule.LinkedInURL" | translate
+              }}</mat-label>
+              <input
+                (change)="updateContact()"
+                matInput
+                type="text"
+                formControlName="linkedInUrl"
+              />
+            </mat-form-field>
+          </div>
+        </form>
+        <div class="cm-section-heading">
+          <h2>{{ "RegistriesModule.UserForm.Customization" | translate }}</h2>
+        </div>
+        <div class="cm-customization pw-field">
+          <form [formGroup]="changePasswordForm">
+            <div class="form-field ">
+              <mat-form-field appearance="legacy">
+                <mat-label>{{
+                  "RegistriesModule.UserForm.Password" | translate
+                }}</mat-label>
+                <input matInput type="text" formControlName="password" />
+                <mat-error
+                  *ngIf="
+                    (this.changePasswordForm.get('password')?.invalid ||
+                      this.changePasswordForm.get('password')?.touched) &&
+                    this.changePasswordForm.get('password')?.errors?.required
+                  "
+                >
+                  Password Is Required</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="form-field ">
+              <mat-form-field appearance="legacy">
+                <mat-label>{{
+                  "RegistriesModule.UserForm.NewPassword" | translate
+                }}</mat-label>
+                <input
+                  matInput
+                  (keyup)="matchPassword()"
+                  type="text"
+                  formControlName="newPass"
+                />
+                <mat-error
+                  *ngIf="
+                    (this.changePasswordForm.get('newPass')?.invalid ||
+                      this.changePasswordForm.get('newPass')?.touched) &&
+                    this.changePasswordForm.get('newPass')?.errors?.required
+                  "
+                >
+                  New Password is Required</mat-error
+                >
+                <mat-error
+                  *ngIf="
+                    (this.changePasswordForm.get('newPass')?.invalid ||
+                      this.changePasswordForm.get('newPass')?.touched) &&
+                    this.changePasswordForm.get('newPass')?.errors?.pattern
+                  "
+                >
+                  Password must only be alpha numeric</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="form-field ">
+              <mat-form-field appearance="legacy">
+                <mat-label>{{
+                  "RegistriesModule.UserForm.PasswordConfirm" | translate
+                }}</mat-label>
+                <input
+                  matInput
+                  (keyup)="matchPassword()"
+                  type="text"
+                  formControlName="passConfirm"
+                />
+                <mat-error
+                  *ngIf="
+                    (this.changePasswordForm.get('passConfirm')?.invalid ||
+                      this.changePasswordForm.get('passConfirm')?.touched) &&
+                    this.changePasswordForm.get('passConfirm')?.errors?.required
+                  "
+                >
+                  Re-enter the New Password</mat-error
+                >
+                <mat-error
+                  *ngIf="
+                    this.changePasswordForm.get('passConfirm')?.touched &&
+                    passSame
+                  "
+                >
+                  Must be same as new Password</mat-error
+                >
+                <mat-error
+                  *ngIf="
+                    (this.changePasswordForm.get('passConfirm')?.invalid ||
+                      this.changePasswordForm.get('passConfirm')?.touched) &&
+                    this.changePasswordForm.get('passConfirm')?.errors?.pattern
+                  "
+                >
+                  Must only be alpha numeric</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="form-field">
+              <button mat-button (click)="changePassword()">Submit</button>
+            </div>
+          </form>
+          <div class="cm-section-heading">
+            <h2>{{"RegistriesModule.UserForm.Theme" | translate}}</h2>
+          </div>
+
+          <div class="theme-main-container">
+            <div class="theme-container">
+
+            <div class="theme-type red-theme active-theme">
+                <div class="theme-inner-container">
+                    <div class="th-header th-red">
+                        <img src="assets/th-aida-logo.svg" alt="AIDA Logo">
+                    </div>
+                    <div class="theme-body-wrapper">
+                        <img src="assets/orange-th.png" alt="Orange Theme">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="theme-type green-theme">
+                <div class="theme-inner-container">
+                    <div class="th-header th-green">
+                        <img src="assets/th-aida-logo.svg" alt="AIDA Logo">
+                    </div>
+                    <div class="theme-body-wrapper">
+                        <img src="assets/green-th.png" alt="Green Theme">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="theme-type blue-theme">
+                <div class="theme-inner-container">
+                    <div class="th-header th-blue">
+                        <img src="assets/th-aida-logo.svg" alt="AIDA Logo">
+                    </div>
+                    <div class="theme-body-wrapper">
+                        <img src="assets/blue-th.png" alt="Blue Theme">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>

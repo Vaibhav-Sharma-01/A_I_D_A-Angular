@@ -1,0 +1,21 @@
+.sub-menu-nav {
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    li {
+      a {
+        padding: 10px 15px;
+        display: block;
+        &.active {
+          background: #ef7166;
+          color: #fff;
+        }
+        &:hover {
+          background: #ebebeb;
+          color: #ef7166;
+        }
+      }
+    }
+  }
+}

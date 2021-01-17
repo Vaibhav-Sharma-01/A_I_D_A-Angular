@@ -1,0 +1,205 @@
+<div class="component-header">
+  <div class="heading">
+    <h3>{{ "RegistriesModule.Tenant" | translate}} <span>{{ "RegistriesModule.PQSSRL" | translate}}</span></h3>
+    <a routerLink="/registries/tenants" class="back-button"><mat-icon>navigate_before</mat-icon>{{ "RegistriesModule.BackToTenantList" | translate}}</a>
+  </div>
+  <div class="header-loader" *ngIf="isLoading">
+    <app-loader></app-loader>
+  </div>
+</div>
+<div class="component-body">
+  <div class="tenant-body">
+    <div class="tenant-form">
+      <form [formGroup]="tenantForm">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.BusinessName" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="name">
+                  <mat-error>
+                    {{ "RegistriesModule.BusinessNameIs" | translate}} <strong>{{ "RegistriesModule.required" | translate}}</strong>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.VAT" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="vatNumber">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.FiscalCode" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="fiscalCode">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.SDICode" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="sdiCode">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.REA Code" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="reaCode">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.Phone" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="phoneNumber">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.Email" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="email">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.Pec" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="pec">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.Address" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="address">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.PostalCode" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="postalCode">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.City" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="city">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="legacy">
+                  <mat-label>{{ "RegistriesModule.Province" | translate}}</mat-label>
+                  <input matInput type="text" formControlName="province">
+                </mat-form-field>
+              </div>
+              <div class="form-field">
+                <mat-form-field appearance="fill">
+                  <mat-label>{{ "RegistriesModule.Country" | translate}}</mat-label>
+                  <mat-select formControlName="country">
+                    <mat-option
+                      *ngFor="let country of countries"
+                      [value]="country.name"
+                    >
+                      {{ country.name }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-4">
+              
+              <div class="fieldset-box" *ngIf="!editMode">
+                <div class="form-field">
+                  <fieldset formGroupName="userForm">
+                    <legend>{{ "RegistriesModule.AdminUserOfTheTenant" | translate}}</legend>
+                      <div class="form-field">
+                        <mat-form-field appearance="legacy">
+                          <mat-label> {{ "RegistriesModule.Name" | translate}} </mat-label>
+                          <input matInput type="text" formControlName="name"> 
+                        </mat-form-field>
+                      </div>
+                      <div class="form-field">
+                        <mat-form-field appearance="legacy">
+                          <mat-label> {{ "RegistriesModule.Email" | translate}} </mat-label>
+                          <input matInput type="text" formControlName="email"> 
+                        </mat-form-field>
+                      </div>
+                      <div class="form-field">
+                        <mat-form-field appearance="legacy">
+                          <mat-label> {{ "RegistriesModule.PhoneNumber" | translate}} </mat-label>
+                          <input matInput type="text" formControlName="phoneNumber"> 
+                        </mat-form-field>
+                      </div>
+                      <div class="form-field">
+                        <mat-form-field appearance="legacy">
+                          <mat-label> {{ "RegistriesModule.UserName" | translate}} </mat-label>
+                          <input matInput type="text" formControlName="userName"> 
+                        </mat-form-field>
+                      </div>
+                      <div class="form-field">
+                        <mat-form-field appearance="legacy">
+                          <mat-label> {{ "RegistriesModule.Password" | translate}} </mat-label>
+                          <input matInput type="text" formControlName="password"> 
+                        </mat-form-field>
+                      </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="fieldset-box">
+                <div class="form-field">
+                  <fieldset>
+                    <legend>{{ "RegistriesModule.TenantDomain_&Logo" | translate}}</legend>
+                    <div class="tenant-domain">
+                      <span class="domain-label">{{ "RegistriesModule.Domain" | translate}}</span>
+                      <span>{{ "RegistriesModule.https" | translate}}</span>
+                      <span><input type="text" formControlName="subDomain"></span>
+                      <span>{{ "RegistriesModule.AidahubCom" | translate}}</span>
+                    </div>
+                    <div class="tenant-logo">
+                      <div class="logo-upload-area">
+                        <img src="assets/sidebar-bottom-logo.svg" alt="Tenant logo">
+                      </div>
+                      <input type="file" style="display: None" #companyLogo (change)="companyLogoUpload($event)"/> 
+                      <button mat-raised-button color="primary" (click)="companyLogo.click()"><mat-icon>cloud_upload</mat-icon>{{ "RegistriesModule.UploadLogo" | translate}}</button>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="tenant-access-wrapper">
+      <div class="drag-drop-container">
+        <h2>{{ "RegistriesModule.AvailableModules" | translate}}</h2>
+        <div
+          cdkDropList
+          #tenantModuleAccessList="cdkDropList"
+          [cdkDropListData]="availableModules"
+          [cdkDropListConnectedTo]="[availableModulesList]"
+          class="module-list"
+          (cdkDropListDropped)="drop($event)">
+          <div class="module-box" *ngFor="let module of availableModules" cdkDrag>{{module.name}}</div>
+        </div>
+      </div>
+      
+      <div class="drag-drop-container">
+        <h2>{{ "RegistriesModule.TenantModuleAccess" | translate}}</h2>
+        <div
+          cdkDropList
+          #availableModulesList="cdkDropList"
+          [cdkDropListData]="tenantModuleAccess"
+          [cdkDropListConnectedTo]="[tenantModuleAccessList]"
+          class="module-list"
+          (cdkDropListDropped)="drop($event)">
+          <div class="module-box" *ngFor="let module of tenantModuleAccess" cdkDrag>{{module.name}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button mat-raised-button color="primary" (click)="editMode? updateTenant(): createTenant()">{{editMode? 'Update Tenant' : 'Create Tenant'}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+footer {
+  position: relative;
+  background-color: #F5F7F9;
+  font-size: 1rem;
+  color: #a9a4a4;
+  .footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .footer-content {
+      padding: 10px 0;
+      .version {
+        color: #4a4a4a;
+      }
+      .copyright {
+        padding-left: 5rem;
+      }
+    }
+  }
+}

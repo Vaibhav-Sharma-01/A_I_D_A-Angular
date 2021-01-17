@@ -1,0 +1,26 @@
+.cm-login-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #FBDAD7;
+  overflow: hidden;
+}
+
+.slide-bottom-to-top {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 800px;
+  background: #fff;
+  position: fixed;
+  right: 20%;
+  z-index: 99;
+  bottom: 0;
+  box-shadow: 0 0 6px #0000005c;
+  z-index: 99999;
+  // transition: all 0.2s linear;
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    height: 600px !important;
+  }
+}

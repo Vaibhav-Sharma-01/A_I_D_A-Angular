@@ -1,0 +1,31 @@
+.breadcrumb-inner-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    li {
+      a {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #9f9f9f;
+        user-select: none;
+        cursor: pointer;
+        .icon {
+          position: relative;
+          left: 10px;
+          top: 3px;
+          mat-icon {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

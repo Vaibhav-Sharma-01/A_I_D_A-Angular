@@ -1,0 +1,2067 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>aida-next documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">aida-next documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CompaniesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/features/registries/companies/companies.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-companies</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./companies.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./companies.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#companies">companies</a>
+                            </li>
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#isAddCompanyDialogOpen">isAddCompanyDialogOpen</a>
+                            </li>
+                            <li>
+                                <a href="#isTableLoading">isTableLoading</a>
+                            </li>
+                            <li>
+                                <a href="#jsonConvert">jsonConvert</a>
+                            </li>
+                            <li>
+                                <a href="#messages">messages</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                            <li>
+                                <a href="#subscription">subscription</a>
+                            </li>
+                            <li>
+                                <a href="#tenantId">tenantId</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                            <li>
+                                <a href="#userId">userId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addCompanyDialog">addCompanyDialog</a>
+                            </li>
+                            <li>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#checkboxLabel">checkboxLabel</a>
+                            </li>
+                            <li>
+                                <a href="#defineFilter">defineFilter</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCompany">deleteCompany</a>
+                            </li>
+                            <li>
+                                <a href="#deleteDialog">deleteDialog</a>
+                            </li>
+                            <li>
+                                <a href="#exportExcel">exportExcel</a>
+                            </li>
+                            <li>
+                                <a href="#getAllCompanies">getAllCompanies</a>
+                            </li>
+                            <li>
+                                <a href="#getLoggedInUser">getLoggedInUser</a>
+                            </li>
+                            <li>
+                                <a href="#initTableData">initTableData</a>
+                            </li>
+                            <li>
+                                <a href="#isAllSelected">isAllSelected</a>
+                            </li>
+                            <li>
+                                <a href="#masterToggle">masterToggle</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#subscribeRegistriesSubjectChanges">subscribeRegistriesSubjectChanges</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(registriesService: <a href="../injectables/RegistriesService.html">RegistriesService</a>, loginInUserData: <a href="../injectables/GetLoggedUserService.html">GetLoggedUserService</a>, toast: <a href="../injectables/ToastMessage.html">ToastMessage</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>registriesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RegistriesService.html" target="_self" >RegistriesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loginInUserData</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GetLoggedUserService.html" target="_self" >GetLoggedUserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastMessage.html" target="_self" >ToastMessage</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCompanyDialog"></a>
+                    <span class="name">
+                        <b>
+                            addCompanyDialog
+                        </b>
+                        <a href="#addCompanyDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCompanyDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open Company slider</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <b>
+                            applyFilter
+                        </b>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>applyFilter(event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Apply filter</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>void</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkboxLabel"></a>
+                    <span class="name">
+                        <b>
+                            checkboxLabel
+                        </b>
+                        <a href="#checkboxLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkboxLabel(row?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check box label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defineFilter"></a>
+                    <span class="name">
+                        <b>
+                            defineFilter
+                        </b>
+                        <a href="#defineFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>defineFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="234"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:234</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to define the rules for search</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCompany"></a>
+                    <span class="name">
+                        <b>
+                            deleteCompany
+                        </b>
+                        <a href="#deleteCompany"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCompany(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To delete the Record</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Id of the record</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteDialog"></a>
+                    <span class="name">
+                        <b>
+                            deleteDialog
+                        </b>
+                        <a href="#deleteDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteDialog(record: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To take user confirmation to delete the record</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>record</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Record to be deleted</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportExcel"></a>
+                    <span class="name">
+                        <b>
+                            exportExcel
+                        </b>
+                        <a href="#exportExcel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>exportExcel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Export Excel</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllCompanies"></a>
+                    <span class="name">
+                        <b>
+                            getAllCompanies
+                        </b>
+                        <a href="#getAllCompanies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllCompanies(tenantId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get all company (By tenant and User Id)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tenantId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>void</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoggedInUser"></a>
+                    <span class="name">
+                        <b>
+                            getLoggedInUser
+                        </b>
+                        <a href="#getLoggedInUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoggedInUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Logged In User Details;</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initTableData"></a>
+                    <span class="name">
+                        <b>
+                            initTableData
+                        </b>
+                        <a href="#initTableData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initTableData(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Init table</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAllSelected"></a>
+                    <span class="name">
+                        <b>
+                            isAllSelected
+                        </b>
+                        <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAllSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Table row all selected</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="masterToggle"></a>
+                    <span class="name">
+                        <b>
+                            masterToggle
+                        </b>
+                        <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>masterToggle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Table toggle checkbox</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="252"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:252</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Angular lifecycle hook</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Lifecycle hooks</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscribeRegistriesSubjectChanges"></a>
+                    <span class="name">
+                        <b>
+                            subscribeRegistriesSubjectChanges
+                        </b>
+                        <a href="#subscribeRegistriesSubjectChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>subscribeRegistriesSubjectChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To get CompanyList on slider close</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="companies"></a>
+                        <span class="name">
+                            <b>
+                            companies</b>
+                            <a href="#companies"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    &#x27;select&#x27;,
+    &#x27;name&#x27;,
+    &#x27;email&#x27;,
+    &#x27;phone&#x27;,
+    &#x27;manager&#x27;,
+    &#x27;industry&#x27;,
+    &#x27;action&#x27;,
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAddCompanyDialogOpen"></a>
+                        <span class="name">
+                            <b>
+                            isAddCompanyDialogOpen</b>
+                            <a href="#isAddCompanyDialogOpen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isTableLoading"></a>
+                        <span class="name">
+                            <b>
+                            isTableLoading</b>
+                            <a href="#isTableLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jsonConvert"></a>
+                        <span class="name">
+                            <b>
+                            jsonConvert</b>
+                            <a href="#jsonConvert"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>JsonConvert</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messages"></a>
+                        <span class="name">
+                            <b>
+                            messages</b>
+                            <a href="#messages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new SelectionModel&lt;any&gt;(true, [])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subscription"></a>
+                        <span class="name">
+                            <b>
+                            subscription</b>
+                            <a href="#subscription"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tenantId"></a>
+                        <span class="name">
+                            <b>
+                            tenantId</b>
+                            <a href="#tenantId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userId"></a>
+                        <span class="name">
+                            <b>
+                            userId</b>
+                            <a href="#userId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/features/registries/companies/companies.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+
+// Material Modules
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+import { MatSort } from &#x27;@angular/material/sort&#x27;;
+import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+
+// AIDA Services
+import { RegistriesService } from &#x27;@features/registries/service/registries.service&#x27;;
+import { ToastMessage } from &#x27;@shared/services/toast-message&#x27;;
+
+// 3rd Party Module
+import { JsonConvert } from &#x27;json2typescript&#x27;;
+
+// Models
+import { Companies } from &#x27;@features/registries/models/companies.model&#x27;;
+
+// AIDA Components
+import { DeleteDialogComponent } from &#x27;@shared/components/delete-dialog/delete-dialog.component&#x27;;
+
+// Utils
+import { Messages } from &#x27;@utils/data/message&#x27;;
+import { LoggedInUser } from &#x27;@shared/models/logged-in-user-data.model&#x27;;
+import { GetLoggedUserService } from &#x27;@shared/services/get-logged-user.service&#x27;;
+
+// rxjs Operators
+import { Subscription } from &#x27;rxjs&#x27;;
+
+@Component({
+  selector: &#x27;app-companies&#x27;,
+  templateUrl: &#x27;./companies.component.html&#x27;,
+  styleUrls: [&#x27;./companies.component.scss&#x27;],
+})
+export class CompaniesComponent implements OnInit, OnDestroy {
+  companies: any;
+  displayedColumns: string[] &#x3D; [
+    &#x27;select&#x27;,
+    &#x27;name&#x27;,
+    &#x27;email&#x27;,
+    &#x27;phone&#x27;,
+    &#x27;manager&#x27;,
+    &#x27;industry&#x27;,
+    &#x27;action&#x27;,
+  ];
+  dataSource: any;
+  isAddCompanyDialogOpen: boolean &#x3D; false;
+  isTableLoading: boolean &#x3D; false;
+  jsonConvert: JsonConvert;
+  messages: any;
+  selection &#x3D; new SelectionModel&lt;any&gt;(true, []);
+  subscription: Subscription;
+  tenantId: string;
+  userId: string;
+  user: any;
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+
+  /**
+   * Constructor
+   */
+  constructor(
+    private registriesService: RegistriesService,
+    private loginInUserData: GetLoggedUserService,
+    private toast: ToastMessage,
+    private dialog: MatDialog
+  ) {}
+
+  /**
+   * Lifecycle hooks
+   */
+  ngOnInit(): void {
+    this.jsonConvert &#x3D; new JsonConvert();
+    this.getLoggedInUser();
+    this.initTableData([]);
+    this.defineFilter();
+    this.messages &#x3D; Messages.en;
+  }
+
+  /**
+   * To get CompanyList on slider close
+   */
+  subscribeRegistriesSubjectChanges() {
+    this.isTableLoading &#x3D; true;
+    this.subscription &#x3D; this.registriesService.registriesSubject.subscribe(
+      (res: any) &#x3D;&gt; {
+        if (res &#x3D;&#x3D; &#x27;closeCompany&#x27;) {
+          this.isTableLoading &#x3D; false;
+          this.isAddCompanyDialogOpen &#x3D; false;
+          this.getAllCompanies(this.user.tenantId, this.user.id);
+        }
+      },
+      (error) &#x3D;&gt; {}
+    );
+  }
+
+  /**
+   * Get Logged In User Details;
+   */
+  getLoggedInUser() {
+    this.loginInUserData.getLoginUserData().subscribe((res: any) &#x3D;&gt; {
+      this.user &#x3D; this.jsonConvert.deserializeObject(res, LoggedInUser);
+    });
+    this.getAllCompanies(this.user.tenantId, this.user.id);
+    this.subscribeRegistriesSubjectChanges();
+  }
+
+  /**
+   * Open Company slider
+   */
+  addCompanyDialog() {
+    this.isAddCompanyDialogOpen &#x3D; !this.isAddCompanyDialogOpen;
+  }
+
+  /**
+   * To take user confirmation to delete the record
+   * @param {Object} record Record to be deleted
+   */
+  deleteDialog(record: any) {
+    let dialogRef &#x3D; this.dialog.open(DeleteDialogComponent, {
+      width: &#x27;500px&#x27;,
+      data: { title: &#x60;Delete Company Record ${record.name}&#x60; },
+    });
+
+    dialogRef.afterClosed().subscribe((res: boolean) &#x3D;&gt; {
+      console.log(res);
+      if (res) {
+        this.deleteCompany(record.id);
+      }
+    });
+  }
+
+  /**
+   * To delete the Record
+   * @param {any} id Id of the record
+   */
+  deleteCompany(id: any) {
+    this.isTableLoading &#x3D; true;
+    this.registriesService.deleteCompanyById(id).subscribe(
+      (res: any) &#x3D;&gt; {
+        this.toast.open(this.messages.company.deleted, &#x27;close&#x27;);
+        this.getAllCompanies(this.user.tenantId, this.user.id);
+      },
+      (err: any) &#x3D;&gt; {
+        this.isTableLoading &#x3D; false;
+        this.toast.open(this.messages.company.unableToDelete, &#x27;error&#x27;);
+      }
+    );
+  }
+
+  /**
+   * Table row all selected
+   */
+  isAllSelected() {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.dataSource.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }
+
+  /**
+   * Table toggle checkbox
+   */
+  masterToggle() {
+    this.isAllSelected()
+      ? this.selection.clear()
+      : this.dataSource.data.forEach((row: any) &#x3D;&gt; this.selection.select(row));
+  }
+
+  /**
+   * Check box label
+   * @param {any} row
+   */
+  checkboxLabel(row?: any): string {
+    if (!row) {
+      return &#x60;${this.isAllSelected() ? &#x27;select&#x27; : &#x27;deselect&#x27;} all&#x60;;
+    }
+    return &#x60;${this.selection.isSelected(row) ? &#x27;deselect&#x27; : &#x27;select&#x27;} row ${
+      row.id + 1
+    }&#x60;;
+  }
+
+  /**
+   * Export Excel
+   */
+  exportExcel() {}
+
+  /**
+   * Init table
+   * @param {any} data
+   */
+  initTableData(data: any): void {
+    this.dataSource &#x3D; new MatTableDataSource&lt;any&gt;(data);
+    this.dataSource.paginator &#x3D; this.paginator;
+    this.dataSource.sort &#x3D; this.sort;
+  }
+
+  /**
+   * Get all company (By tenant and User Id)
+   * @param {string} tenantId
+   * @param {string} userId
+   * @returns void
+   */
+  getAllCompanies(tenantId: string, userId: string): void {
+    this.isTableLoading &#x3D; true;
+    this.registriesService.getAllCompanies(tenantId, userId).subscribe(
+      (res: any) &#x3D;&gt; {
+        this.isTableLoading &#x3D; false;
+        this.companies &#x3D; this.jsonConvert.deserialize(res.data, Companies);
+        this.initTableData(this.companies);
+      },
+      (err: any) &#x3D;&gt; {
+        this.isTableLoading &#x3D; false;
+        this.toast.open(this.messages.company.error.unableToGet, &#x27;error&#x27;);
+      }
+    );
+  }
+
+  /**
+   * Apply filter
+   * @param {Event} event
+   * @returns void
+   */
+  applyFilter(event: Event) {
+    const filterValue &#x3D; (event.target as HTMLInputElement).value;
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+  }
+
+  /**
+   * Function to define the rules for search
+   */
+  defineFilter() {
+    this.dataSource.filterPredicate &#x3D; function (
+      data: any,
+      searchString: string
+    ): boolean {
+      return (
+        data.name.toLowerCase().includes(searchString) ||
+        data.email.toLowerCase().includes(searchString) ||
+        data.typology.toLowerCase().includes(searchString) ||
+        data.phoneNumber.toLowerCase().includes(searchString)||
+        data.manager.name.toLowerCase().includes(searchString)
+      );
+    };
+  }
+
+  /**
+   * Angular lifecycle hook
+   */
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;component-header&quot;&gt;
+  &lt;div class&#x3D;&quot;heading&quot;&gt;
+    &lt;h3&gt;Companies&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;actions&quot;&gt;
+    &lt;div class&#x3D;&quot;table-search&quot;&gt;
+      &lt;mat-form-field&gt;
+        &lt;mat-label&gt;Search Companies&lt;/mat-label&gt;
+        &lt;input autocomplete&#x3D;&quot;off&quot; matInput (keyup)&#x3D;&quot;applyFilter($event)&quot; placeholder&#x3D;&quot;Ex. Microsoft&quot; #input&gt;
+      &lt;/mat-form-field&gt;
+    &lt;/div&gt;
+    &lt;button mat-button [matMenuTriggerFor]&#x3D;&quot;tableOption&quot;&gt;Table actions&lt;/button&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;user.role!&#x3D;&#x27;god&#x27;&quot;&gt;
+      &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;addCompanyDialog()&quot;&gt;
+        &lt;mat-icon&gt;add&lt;/mat-icon&gt;Add Company
+      &lt;/button&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;companies-list common-table-wapper&quot;&gt;
+  &lt;div class&#x3D;&quot;loader-wrapper&quot; *ngIf&#x3D;&quot;isTableLoading&quot;&gt;
+    &lt;app-aida-loader&gt;&lt;/app-aida-loader&gt;
+  &lt;/div&gt;
+  &lt;table mat-table [dataSource]&#x3D;&quot;dataSource&quot; matSort class&#x3D;&quot;common-table&quot;&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;
+        &lt;mat-checkbox (change)&#x3D;&quot;$event ? masterToggle() : null&quot; [checked]&#x3D;&quot;selection.hasValue() &amp;&amp; isAllSelected()&quot;
+          [indeterminate]&#x3D;&quot;selection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
+        &lt;/mat-checkbox&gt;
+      &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;
+        &lt;mat-checkbox (click)&#x3D;&quot;$event.stopPropagation()&quot; (change)&#x3D;&quot;$event ? selection.toggle(row) : null&quot;
+          [checked]&#x3D;&quot;selection.isSelected(row)&quot;&gt;
+        &lt;/mat-checkbox&gt;
+      &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Name &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot;&gt; &lt;a routerLink&#x3D;&quot;/registries/company/{{company.id}}&quot;&gt;{{company.name | titlecase }}&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;email&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Email &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot;&gt; {{company.email}} &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;phone&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt; Phone &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot;&gt; {{company.phoneNumber}} &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;manager&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt; Manager &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot;&gt; {{company.manager?.name | titlecase}} &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;industry&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Industry &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot;&gt; {{company.typology | uppercase}} &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;action&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Action &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let company&quot; style&#x3D;&quot;cursor: pointer;&quot;&gt;&lt;button (click)&#x3D;&quot;deleteDialog(company)&quot; mat-flat-button&gt;&lt;mat-icon&gt;delete&lt;/mat-icon&gt; &lt;/button&gt;&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+
+    &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;div class&#x3D;&quot;no-data-to-display table-message&quot;
+    *ngIf&#x3D;&quot;dataSource.data.length &#x3D;&#x3D;&#x3D; 0 || dataSource.filteredData.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;No data to display&lt;/div&gt;
+  &lt;mat-paginator [pageSizeOptions]&#x3D;&quot;[10, 20]&quot; showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;add-company-form sidebar-dialog&quot; [ngClass]&#x3D;&quot;{&#x27;open&#x27; : isAddCompanyDialogOpen}&quot;&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;isAddCompanyDialogOpen&quot;&gt;
+    &lt;div class&#x3D;&quot;sidebar-dialog-header&quot;&gt;
+      &lt;h4&gt;Add Company&lt;/h4&gt;
+      &lt;a class&#x3D;&quot;close-sidebar-dialog&quot; (click)&#x3D;&quot;addCompanyDialog()&quot;&gt;
+        &lt;mat-icon&gt;
+          close
+        &lt;/mat-icon&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;sidebar-dialog-body&quot;&gt;
+      &lt;app-add-company&gt;&lt;/app-add-company&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;sidebar-dialog-footer&quot;&gt;
+
+    &lt;/div&gt;
+  &lt;/ng-container&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;custom-overlay&quot; *ngIf&#x3D;&quot;isAddCompanyDialogOpen&quot;&gt;&lt;/div&gt;
+
+&lt;mat-menu #tableOption&#x3D;&quot;matMenu&quot; class&#x3D;&quot;custom-dropdown&quot;&gt;
+  &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;exportExcel()&quot;&gt;
+    &lt;mat-icon&gt;text_snippet&lt;/mat-icon&gt;Export Excel
+  &lt;/button&gt;
+  &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;exportExcel()&quot;&gt;
+    &lt;mat-icon&gt;text_snippet&lt;/mat-icon&gt;Import Excel
+  &lt;/button&gt;
+  &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;exportExcel()&quot;&gt;
+    &lt;mat-icon&gt;delete&lt;/mat-icon&gt;Delete selected
+  &lt;/button&gt;
+&lt;/mat-menu&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./companies.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="component-header">  <div class="heading">    <h3>Companies</h3>  </div>  <div class="actions">    <div class="table-search">      <mat-form-field>        <mat-label>Search Companies</mat-label>        <input autocomplete="off" matInput (keyup)="applyFilter($event)" placeholder="Ex. Microsoft" #input>      </mat-form-field>    </div>    <button mat-button [matMenuTriggerFor]="tableOption">Table actions</button>    <ng-container *ngIf="user.role!=\'god\'">      <button mat-raised-button color="primary" (click)="addCompanyDialog()">        <mat-icon>add</mat-icon>Add Company      </button>    </ng-container>  </div></div><div class="companies-list common-table-wapper">  <div class="loader-wrapper" *ngIf="isTableLoading">    <app-aida-loader></app-aida-loader>  </div>  <table mat-table [dataSource]="dataSource" matSort class="common-table">    <ng-container matColumnDef="select">      <th mat-header-cell *matHeaderCellDef>        <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"          [indeterminate]="selection.hasValue() && !isAllSelected()">        </mat-checkbox>      </th>      <td mat-cell *matCellDef="let row">        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"          [checked]="selection.isSelected(row)">        </mat-checkbox>      </td>    </ng-container>    <ng-container matColumnDef="name">      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>      <td mat-cell *matCellDef="let company"> <a routerLink="/registries/company/{{company.id}}">{{company.name | titlecase }}</a>      </td>    </ng-container>    <ng-container matColumnDef="email">      <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>      <td mat-cell *matCellDef="let company"> {{company.email}} </td>    </ng-container>    <ng-container matColumnDef="phone">      <th mat-header-cell *matHeaderCellDef> Phone </th>      <td mat-cell *matCellDef="let company"> {{company.phoneNumber}} </td>    </ng-container>    <ng-container matColumnDef="manager">      <th mat-header-cell *matHeaderCellDef> Manager </th>      <td mat-cell *matCellDef="let company"> {{company.manager?.name | titlecase}} </td>    </ng-container>    <ng-container matColumnDef="industry">      <th mat-header-cell *matHeaderCellDef mat-sort-header> Industry </th>      <td mat-cell *matCellDef="let company"> {{company.typology | uppercase}} </td>    </ng-container>    <ng-container matColumnDef="action">      <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>      <td mat-cell *matCellDef="let company" style="cursor: pointer;"><button (click)="deleteDialog(company)" mat-flat-button><mat-icon>delete</mat-icon> </button></td>    </ng-container>    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>  </table>  <div class="no-data-to-display table-message"    *ngIf="dataSource.data.length === 0 || dataSource.filteredData.length === 0">No data to display</div>  <mat-paginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator></div><div class="add-company-form sidebar-dialog" [ngClass]="{\'open\' : isAddCompanyDialogOpen}">  <ng-container *ngIf="isAddCompanyDialogOpen">    <div class="sidebar-dialog-header">      <h4>Add Company</h4>      <a class="close-sidebar-dialog" (click)="addCompanyDialog()">        <mat-icon>          close        </mat-icon>      </a>    </div>    <div class="sidebar-dialog-body">      <app-add-company></app-add-company>    </div>    <div class="sidebar-dialog-footer">    </div>  </ng-container></div><div class="custom-overlay" *ngIf="isAddCompanyDialogOpen"></div><mat-menu #tableOption="matMenu" class="custom-dropdown">  <button mat-button color="primary" (click)="exportExcel()">    <mat-icon>text_snippet</mat-icon>Export Excel  </button>  <button mat-button color="primary" (click)="exportExcel()">    <mat-icon>text_snippet</mat-icon>Import Excel  </button>  <button mat-button color="primary" (click)="exportExcel()">    <mat-icon>delete</mat-icon>Delete selected  </button></mat-menu></div>'
+    var COMPONENTS = [{'name': 'ActivitiesComponent', 'selector': 'app-activities'},{'name': 'AddCompanyComponent', 'selector': 'app-add-company'},{'name': 'AddContactComponent', 'selector': 'app-add-contact'},{'name': 'AddWidgetsDialogComponent', 'selector': 'app-add-widgets-dialog'},{'name': 'AidaLoaderComponent', 'selector': 'app-aida-loader'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssociatedContactComponent', 'selector': 'app-associated-contact'},{'name': 'AttachmentsComponent', 'selector': 'app-attachments'},{'name': 'AuthenticationComponent', 'selector': 'app-authentication'},{'name': 'BreadcrumbsComponent', 'selector': 'app-breadcrumbs'},{'name': 'CompaniesComponent', 'selector': 'app-companies'},{'name': 'CompanyComponent', 'selector': 'app-company'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContactsComponent', 'selector': 'app-contacts'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DeleteDialogComponent', 'selector': 'app-delete-dialog'},{'name': 'DriveComponent', 'selector': 'app-drive'},{'name': 'EmailComponent', 'selector': 'app-email'},{'name': 'EmailsComponent', 'selector': 'app-emails'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'ForgotPasswordStepFirstComponent', 'selector': 'app-forgot-password-step-first'},{'name': 'ForgotPasswordStepSecondComponent', 'selector': 'app-forgot-password-step-second'},{'name': 'GeneralEmailComponent', 'selector': 'app-general-email'},{'name': 'GeneralPhoneComponent', 'selector': 'app-general-phone'},{'name': 'GeneralSharedComponent', 'selector': 'app-general-shared'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HumanResourceComponent', 'selector': 'app-human-resource'},{'name': 'InformationComponent', 'selector': 'app-information'},{'name': 'ListsComponent', 'selector': 'app-lists'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBodyComponent', 'selector': 'app-main-body'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'OpportunityComponent', 'selector': 'app-opportunity'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'QuickMenuComponent', 'selector': 'app-quick-menu'},{'name': 'RegistriesComponent', 'selector': 'app-registries'},{'name': 'RelatedCompaniesComponent', 'selector': 'app-related-companies'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SideSlideComponent', 'selector': 'app-side-slide'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SubHeaderMenuComponent', 'selector': 'app-sub-header-menu'},{'name': 'TabsComponent', 'selector': 'app-tabs'},{'name': 'TasksComponent', 'selector': 'app-tasks'},{'name': 'TenantComponent', 'selector': 'app-tenant'},{'name': 'TenantsComponent', 'selector': 'app-tenants'},{'name': 'TestComponent', 'selector': 'app-test'},{'name': 'TimeTrackingComponent', 'selector': 'app-time-tracking'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'WebsiteComponent', 'selector': 'app-website'},{'name': 'WidgetsComponent', 'selector': 'app-widgets'},{'name': 'WidgetsSharedComponent', 'selector': 'app-widgets-shared'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CompaniesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CompaniesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

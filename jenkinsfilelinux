@@ -1,0 +1,61 @@
+pipeline {
+  agent any
+  parameters {
+    choice(name: 'Environment', choices: ['Beta', 'Testing', 'Production'], description: 'Pick for deployment')
+    choice(name: 'User', choices: ['⭐ Francesco Perone - francesco.perone@broxlab.com', '⭐ Gerardo Graziano - gerardo.graziano@broxlab.com ', '⭐ Gianfranco Berlino - gianfranco.berlino@broxlab.com', 'Suryansh Srivastava - suryansh@exyconn.com', 'Shriniwas Dubey - shriniwas@exyconn.com', 'Kuldeep Singh Yadav - kuldeep@exyconn.com', 'Anshul Srivastava - anshul@exyconn.com', 'Rahul - rahul@exyconn.com'], description: 'Pick user')
+  }
+   stages {
+      stage('Process started') {
+        steps {
+          echo 'Starting process...'
+          notifyBuild('STARTED', '#F2DD05')
+        }
+      }
+      stage('Compile stage') {
+        steps {
+          sh 'cd UI && npm install'
+          notifyBuild('PACKAGE INSTALLATION', '#F6B917')
+        }
+      }
+      stage('Build stage') {
+        steps {
+            sh 'npm run build'
+            notifyBuild('BUILD STARTED', '#009B95')
+          }
+      }
+      stage('Deploying') {
+        steps {
+          echo "Build Trigger: ${params.Environment} build trigger by ${params.User} from ${params.Select_Branch}"
+          script {
+            if( params.Environment == 'Beta' ) {
+              notifyBuild('STAGING DEPLOYMENT IN PROCESS', '#00BE7D')
+              sh 'npm run deploy:beta'
+            } 
+            if( params.Environment == 'Testing' ) {
+              notifyBuild('STAGING DEPLOYMENT IN PROCESS', '#00BE7D')
+              sh 'npm run deploy:beta'
+            } 
+            if( params.Environment == 'Production' ) {
+              notifyBuild('STAGING DEPLOYMENT IN PROCESS', '#00BE7D')
+              sh 'npm run deploy:beta'
+            }
+          }
+         }
+      }
+      stage('Completed') {
+        steps {
+          notifyBuild('BUILD SUCCESSFULLY', '#004616')
+          echo 'Completed successfully.'
+        }
+      }
+   }
+}
+
+def notifyBuild(String buildStatus = 'STARTED', String colorCode = '#FF0000') {
+  // Default values
+  def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
+  def summary = "${subject} (${env.BUILD_URL})"
+
+  // Send notifications
+  // slackSend (color: colorCode, message: summary)
+}

@@ -1,0 +1,22 @@
+<div cdkDropList class="quick-menu-wrapper" (cdkDropListDropped)="drop($event)">
+  <div class="quick-menu-item" cdkDragLockAxis="y" *ngFor="let menu of quickMenus" cdkDragBoundary=".quick-menu-wrapper" cdkDrag>
+    <span class="icon">
+      <mat-icon>
+        {{ menu.icon }}
+      </mat-icon>
+    </span>
+    <span class="text">
+      {{ menu.name }}
+    </span>
+  </div>
+  <div class="quick-menu-item">
+    <span class="icon">
+      <mat-icon>
+        add
+      </mat-icon>
+    </span>
+    <span class="text">
+      {{"CommonModule.AddItems" | translate}}
+    </span>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.right{
+    width: 48%;
+    float: right;
+}
+.left{
+    width: 48%;
+    float: left;
+}
+.example-header-image{
+    background-image: url('https://source.unsplash.com/100x100/?nature');
+  height: 15vh;
+  width: 15vh;
+  position: relative;
+  bottom: 1vh;
+  cursor: pointer;
+}
+.imguploader{
+    visibility: hidden;
+}
+.ht{
+    height: 100vh;
+}
+.title{
+    position: relative;
+    top: 2vh;
+    font-size: xxx-large;
+    font-style: italic;
+    font-weight: bolder;
+}
+// .background-color-aida{
+//     color: #ef7166;
+// }

@@ -1,0 +1,61 @@
+<div class="cm-login-page-wrapper">
+  <div class="cm-auth-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="cm-auth-main-wrap">
+            <div class="cm-auth-content">
+              <div class="cm-auth-wrapper-inner">
+                <div class="cm-auth-logo-area">
+                  <div class="logo-wrap"><img src="assets/aida-logo.svg" alt="AIDA Logo"></div>
+                  <div class="side-content">
+                    <h5>{{"AuthenticationModule.ItsNiceToSeeYouAgain" | translate}}</h5>
+                    <h2>{{"AuthenticationModule.WELLBACK" | translate}}</h2>
+                  </div>
+                </div>
+                <div class="cm-auth-form-area">
+                  <div class="auth-loader" *ngIf="loader">
+                    <app-loader></app-loader>
+                  </div>
+                  <div class="main-auth-area" *ngIf="!loader">
+                    <div class="cm-client-logo">
+
+                    </div>
+                    <div class="cm-auth-form-heading">
+                      <h3>{{"AuthenticationModule.LoginToAIDA" | translate}}</h3>
+                    </div>
+                    <div class="cm-auth-form">
+                      <form [formGroup]="loginForm">
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Email" | translate}}</mat-label>
+                          <input matInput  formControlName="email">
+                          <mat-error *ngIf="(this.loginForm.get('email')?.touched || this.loginForm.get('email')?.invalid) && this.loginForm.get('email')?.errors?.required">
+                            {{"AuthenticationModule.EmailIsRequired" | translate}}
+                          </mat-error>
+                          <mat-error *ngIf="(this.loginForm.get('email')?.touched || this.loginForm.get('email')?.invalid) && this.loginForm.get('email')?.errors?.pattern">
+                            {{"AuthenticationModule.EmailMustBeInFormat_abc@xyz.nmo" | translate}}
+                          </mat-error>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>{{"AuthenticationModule.Password" | translate}}</mat-label>
+                          <input matInput type="password" formControlName="password">
+                          <mat-error *ngIf="(this.loginForm.get('password')?.touched || this.loginForm.get('password')?.invalid) && this.loginForm.get('password')?.errors?.required">
+                            {{"AuthenticationModule.PasswordIsRequired" | translate}}
+                          </mat-error>
+                        </mat-form-field>
+                        <div class="auth-action">
+                          <a routerLink="/auth/forgot-password" class="forgot-password">{{"AuthenticationModule.ForgotPassword" | translate}}</a>
+                        </div>
+                        <button mat-raised-button color="primary" class="auth-btn" (click)="login()">{{"AuthenticationModule.Login" | translate}}</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

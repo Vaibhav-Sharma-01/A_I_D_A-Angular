@@ -1,0 +1,60 @@
+<div class="email-form">
+  <div class="cm-mail-close-btn" title="close"><mat-icon>close</mat-icon></div>
+  <div class="cm-mail-minimize-btn" title="Minimize"></div>
+  <div class="loader-wrapper" *ngIf="isLoading">
+    <app-aida-loader></app-aida-loader>
+  </div>
+  <div class="outer-form-body">
+    <form [formGroup]="emailForm">
+      
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>Recipients</mat-label>
+          <input matInput type="text" formControlName="to">
+          <mat-error *ngIf="(this.emailForm.get('to')?.invalid || this.emailForm.get('to')?.touched) && this.emailForm.get('to')?.errors?.required">
+            Atleast one recipient is <strong>required</strong></mat-error>
+          <mat-error *ngIf="(this.emailForm.get('to')?.invalid || this.emailForm.get('to')?.touched) && this.emailForm.get('to')?.errors?.pattern">
+            Should be a proper Email</mat-error>
+            <a class="right" *ngIf="cc" (click)="display('cc')">Cc:</a>
+            <a class="right" *ngIf="bcc" (click)="display('bcc')">Bcc:</a>
+        </mat-form-field>
+      </div>
+
+      <div class="form-field" *ngIf="displaycc">
+        <mat-form-field appearance="legacy">
+          <mat-label>Cc:</mat-label>
+          <input matInput type="text" formControlName="cc">
+            <mat-error *ngIf="(this.emailForm.get('cc')?.invalid || this.emailForm.get('cc')?.touched) && this.emailForm.get('cc')?.errors?.pattern">
+              Should be a proper Email</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-field" *ngIf="displaybcc">
+        <mat-form-field appearance="legacy">
+          <mat-label>Bcc:</mat-label>
+          <input matInput type="text" formControlName="bcc">
+            <mat-error *ngIf="(this.emailForm.get('bcc')?.invalid || this.emailForm.get('bcc')?.touched) && this.emailForm.get('bcc')?.errors?.pattern">
+              Should be a proper Email</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="legacy">
+          <mat-label>Subject</mat-label>
+          <input matInput type="text" formControlName="subject">
+          <mat-error *ngIf="(this.emailForm.get('subject')?.invalid || this.emailForm.get('subject')?.touched) && this.emailForm.get('subject')?.errors?.required">
+            Subject is <strong>required</strong></mat-error>
+        </mat-form-field>
+      </div>
+ 
+      <div class="form-field">
+         <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" (ready)="onReady($event)" formControlName="text"></ckeditor>
+        </div>
+      
+      <div class="form-action">
+        <button mat-raised-button color="primary" (click)="sendemail()"><mat-icon>send</mat-icon></button>
+      </div>
+      
+    </form>
+  </div>
+</div>

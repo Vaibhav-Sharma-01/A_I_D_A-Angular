@@ -1,0 +1,2040 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>aida-next documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">aida-next documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TenantComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/features/registries/tenants/tenant/tenant.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-tenant</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./tenant.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./tenant.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allModules">allModules</a>
+                            </li>
+                            <li>
+                                <a href="#availableModules">availableModules</a>
+                            </li>
+                            <li>
+                                <a href="#companyLogo">companyLogo</a>
+                            </li>
+                            <li>
+                                <a href="#contactId">contactId</a>
+                            </li>
+                            <li>
+                                <a href="#countries">countries</a>
+                            </li>
+                            <li>
+                                <a href="#editMode">editMode</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#isNew">isNew</a>
+                            </li>
+                            <li>
+                                <a href="#messages">messages</a>
+                            </li>
+                            <li>
+                                <a href="#tenantForm">tenantForm</a>
+                            </li>
+                            <li>
+                                <a href="#tenantId">tenantId</a>
+                            </li>
+                            <li>
+                                <a href="#tenantModuleAccess">tenantModuleAccess</a>
+                            </li>
+                            <li>
+                                <a href="#userForm">userForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#companyLogoUpload">companyLogoUpload</a>
+                            </li>
+                            <li>
+                                <a href="#createTenant">createTenant</a>
+                            </li>
+                            <li>
+                                <a href="#drop">drop</a>
+                            </li>
+                            <li>
+                                <a href="#getTenant">getTenant</a>
+                            </li>
+                            <li>
+                                <a href="#inItData">inItData</a>
+                            </li>
+                            <li>
+                                <a href="#initTenantForm">initTenantForm</a>
+                            </li>
+                            <li>
+                                <a href="#isFormDirty">isFormDirty</a>
+                            </li>
+                            <li>
+                                <a href="#isFormValid">isFormValid</a>
+                            </li>
+                            <li>
+                                <a href="#makeFormPristine">makeFormPristine</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#updateTenant">updateTenant</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, registriesApis: <a href="../injectables/RegistriesService.html">RegistriesService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, toast: <a href="../injectables/ToastMessage.html">ToastMessage</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>registriesApis</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RegistriesService.html" target="_self" >RegistriesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastMessage.html" target="_self" >ToastMessage</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="companyLogoUpload"></a>
+                    <span class="name">
+                        <b>
+                            companyLogoUpload
+                        </b>
+                        <a href="#companyLogoUpload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>companyLogoUpload(e: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="339"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:339</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Angular Event</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createTenant"></a>
+                    <span class="name">
+                        <b>
+                            createTenant
+                        </b>
+                        <a href="#createTenant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createTenant()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create tenant</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drop"></a>
+                    <span class="name">
+                        <b>
+                            drop
+                        </b>
+                        <a href="#drop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>drop(event: CdkDragDrop<any[]>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Drop Event</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>CdkDragDrop&lt;any[]&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTenant"></a>
+                    <span class="name">
+                        <b>
+                            getTenant
+                        </b>
+                        <a href="#getTenant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTenant()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Tenant</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inItData"></a>
+                    <span class="name">
+                        <b>
+                            inItData
+                        </b>
+                        <a href="#inItData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inItData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize Country Data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initTenantForm"></a>
+                    <span class="name">
+                        <b>
+                            initTenantForm
+                        </b>
+                        <a href="#initTenantForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initTenantForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize tenant form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFormDirty"></a>
+                    <span class="name">
+                        <b>
+                            isFormDirty
+                        </b>
+                        <a href="#isFormDirty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isFormDirty()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is form dirty</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFormValid"></a>
+                    <span class="name">
+                        <b>
+                            isFormValid
+                        </b>
+                        <a href="#isFormValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isFormValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is form valid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="makeFormPristine"></a>
+                    <span class="name">
+                        <b>
+                            makeFormPristine
+                        </b>
+                        <a href="#makeFormPristine"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>makeFormPristine()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To make the form Pristine</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Angular Life cycle Hook</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateTenant"></a>
+                    <span class="name">
+                        <b>
+                            updateTenant
+                        </b>
+                        <a href="#updateTenant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateTenant()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update Tenant</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allModules"></a>
+                        <span class="name">
+                            <b>
+                            allModules</b>
+                            <a href="#allModules"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    { name: &#x27;Opportunities&#x27;, id: &#x27;2&#x27; },
+    { name: &#x27;Human Resource&#x27;, id: &#x27;3&#x27; },
+    { name: &#x27;Lists&#x27;, id: &#x27;4&#x27; },
+    { name: &#x27;Orders&#x27;, id: &#x27;5&#x27; },
+    { name: &#x27;HelpDesk&#x27;, id: &#x27;6&#x27; },
+    { name: &#x27;Website&#x27;, id: &#x27;7&#x27; },
+    { name: &#x27;Drive&#x27;, id: &#x27;10&#x27; },
+    { name: &#x27;Registries&#x27;, id: &#x27;1&#x27; },
+    { name: &#x27;Dashboard&#x27;, id: &#x27;8&#x27; },
+    { name: &#x27;Settings&#x27;, id: &#x27;9&#x27; },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="availableModules"></a>
+                        <span class="name">
+                            <b>
+                            availableModules</b>
+                            <a href="#availableModules"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    { name: &#x27;Opportunities&#x27;, id: &#x27;2&#x27; },
+    { name: &#x27;Human Resource&#x27;, id: &#x27;3&#x27; },
+    { name: &#x27;Lists&#x27;, id: &#x27;4&#x27; },
+    { name: &#x27;Orders&#x27;, id: &#x27;5&#x27; },
+    { name: &#x27;HelpDesk&#x27;, id: &#x27;6&#x27; },
+    { name: &#x27;Website&#x27;, id: &#x27;7&#x27; },
+    { name: &#x27;Drive&#x27;, id: &#x27;10&#x27; },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="companyLogo"></a>
+                        <span class="name">
+                            <b>
+                            companyLogo</b>
+                            <a href="#companyLogo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>File</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="contactId"></a>
+                        <span class="name">
+                            <b>
+                            contactId</b>
+                            <a href="#contactId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countries"></a>
+                        <span class="name">
+                            <b>
+                            countries</b>
+                            <a href="#countries"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editMode"></a>
+                        <span class="name">
+                            <b>
+                            editMode</b>
+                            <a href="#editMode"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isNew"></a>
+                        <span class="name">
+                            <b>
+                            isNew</b>
+                            <a href="#isNew"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messages"></a>
+                        <span class="name">
+                            <b>
+                            messages</b>
+                            <a href="#messages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tenantForm"></a>
+                        <span class="name">
+                            <b>
+                            tenantForm</b>
+                            <a href="#tenantForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tenantId"></a>
+                        <span class="name">
+                            <b>
+                            tenantId</b>
+                            <a href="#tenantId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tenantModuleAccess"></a>
+                        <span class="name">
+                            <b>
+                            tenantModuleAccess</b>
+                            <a href="#tenantModuleAccess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    { name: &#x27;Registries&#x27;, id: &#x27;1&#x27; },
+    { name: &#x27;Dashboard&#x27;, id: &#x27;8&#x27; },
+    { name: &#x27;Settings&#x27;, id: &#x27;9&#x27; },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userForm"></a>
+                        <span class="name">
+                            <b>
+                            userForm</b>
+                            <a href="#userForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/features/registries/tenants/tenant/tenant.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import {
+  CdkDragDrop,
+  moveItemInArray,
+  transferArrayItem,
+} from &#x27;@angular/cdk/drag-drop&#x27;;
+
+// AIDA services
+import { ToastMessage } from &#x27;@shared/services/toast-message&#x27;;
+import { RegistriesService } from &#x27;@features/registries/service/registries.service&#x27;;
+
+// Utils
+import { Messages } from &#x27;@utils/data/message&#x27;;
+import { Countries } from &#x27;@utils/data/countries&#x27;;
+
+@Component({
+  selector: &#x27;app-tenant&#x27;,
+  templateUrl: &#x27;./tenant.component.html&#x27;,
+  styleUrls: [&#x27;./tenant.component.scss&#x27;],
+})
+export class TenantComponent implements OnInit {
+  companyLogo: File;
+  contactId: any;
+  countries: Array&lt;any&gt;;
+  editMode: boolean;
+  isLoading: boolean &#x3D; false;
+  isNew: boolean &#x3D; false;
+  messages: any;
+  tenantForm: FormGroup;
+  tenantId: any;
+  userForm: FormGroup;
+
+  constructor(
+    private fb: FormBuilder,
+    private registriesApis: RegistriesService,
+    private route: ActivatedRoute,
+    private toast: ToastMessage
+  ) {}
+
+  allModules &#x3D; [
+    { name: &#x27;Opportunities&#x27;, id: &#x27;2&#x27; },
+    { name: &#x27;Human Resource&#x27;, id: &#x27;3&#x27; },
+    { name: &#x27;Lists&#x27;, id: &#x27;4&#x27; },
+    { name: &#x27;Orders&#x27;, id: &#x27;5&#x27; },
+    { name: &#x27;HelpDesk&#x27;, id: &#x27;6&#x27; },
+    { name: &#x27;Website&#x27;, id: &#x27;7&#x27; },
+    { name: &#x27;Drive&#x27;, id: &#x27;10&#x27; },
+    { name: &#x27;Registries&#x27;, id: &#x27;1&#x27; },
+    { name: &#x27;Dashboard&#x27;, id: &#x27;8&#x27; },
+    { name: &#x27;Settings&#x27;, id: &#x27;9&#x27; },
+  ];
+
+  availableModules &#x3D; [
+    { name: &#x27;Opportunities&#x27;, id: &#x27;2&#x27; },
+    { name: &#x27;Human Resource&#x27;, id: &#x27;3&#x27; },
+    { name: &#x27;Lists&#x27;, id: &#x27;4&#x27; },
+    { name: &#x27;Orders&#x27;, id: &#x27;5&#x27; },
+    { name: &#x27;HelpDesk&#x27;, id: &#x27;6&#x27; },
+    { name: &#x27;Website&#x27;, id: &#x27;7&#x27; },
+    { name: &#x27;Drive&#x27;, id: &#x27;10&#x27; },
+  ];
+
+  tenantModuleAccess &#x3D; [
+    { name: &#x27;Registries&#x27;, id: &#x27;1&#x27; },
+    { name: &#x27;Dashboard&#x27;, id: &#x27;8&#x27; },
+    { name: &#x27;Settings&#x27;, id: &#x27;9&#x27; },
+  ];
+
+  /**
+   * Angular Life cycle Hook
+   */
+  ngOnInit(): void {
+    this.tenantId &#x3D; this.route.snapshot.params.id;
+    this.inItData()
+    this.messages &#x3D; Messages.en.tenant;
+    this.initTenantForm();
+    if (this.tenantId !&#x3D; &#x27;create&#x27;) {
+      this.getTenant();
+      this.editMode &#x3D; true;
+    }
+  }
+
+  /**
+   * Is form valid
+   */
+  isFormValid(): boolean {
+    return this.tenantForm.valid;
+  }
+
+  /**
+   * Is form dirty
+   */
+  isFormDirty(): boolean {
+    return this.tenantForm.dirty;
+  }
+
+  /**
+   * To make the form Pristine
+   */
+  makeFormPristine(): void {
+    return this.tenantForm.markAsPristine();
+  }
+
+  /**
+   * Initialize Country Data
+   */
+  inItData(): void {
+    this.countries &#x3D; Countries;
+  }
+
+  /**
+   * Initialize tenant form
+   */
+  initTenantForm(): void {
+    this.tenantForm &#x3D; this.fb.group({
+      name: [&#x27;&#x27;, Validators.required],
+      vatNumber: [&#x27;&#x27;, Validators.required],
+      fiscalCode: [&#x27;&#x27;, Validators.required],
+      sdiCode: [&#x27;&#x27;, Validators.required],
+      reaCode: [&#x27;&#x27;],
+      phoneNumber: [&#x27;&#x27;],
+      email: [&#x27;&#x27;],
+      pec: [&#x27;&#x27;],
+      address: [&#x27;&#x27;],
+      postalCode: [&#x27;&#x27;],
+      city: [&#x27;&#x27;],
+      province: [&#x27;&#x27;],
+      country: [&#x27;&#x27;],
+      access: [],
+      userForm: this.fb.group({
+        name: [&#x27;&#x27;, Validators.required],
+        phoneNumber: [&#x27;&#x27;, Validators.required],
+        password: [&#x27;&#x27;, Validators.required],
+        email: [&#x27;&#x27;, Validators.required],
+        userName: [&#x27;&#x27;, Validators.required],
+        role: [&#x27;admin&#x27;],
+        passwordConfirm: [&#x27;&#x27;],
+        permissions: [],
+        status: [&#x27;active&#x27;],
+      }),
+      subDomain: [&#x27;&#x27;],
+    });
+  }
+
+  /**
+   * Create tenant
+   */
+  createTenant(): void {
+    let permissionArray: any[] &#x3D; [];
+    this.tenantModuleAccess.map((el: any) &#x3D;&gt; {
+      permissionArray.push(el.name);
+    });
+    this.tenantForm.patchValue({
+      access: permissionArray,
+    });
+    this.tenantForm.controls.userForm.patchValue({
+      passwordConfirm: this.tenantForm.value.userForm.password,
+      permissions: permissionArray,
+    });
+    if (this.tenantForm.valid) {
+      this.isLoading &#x3D; true;
+      this.registriesApis
+        .createTenantAndAdminUser(this.tenantForm.value)
+        .subscribe(
+          (res: any) &#x3D;&gt; {
+            if (res.companyId &amp;&amp; this.companyLogo) {
+              const fd &#x3D; new FormData();
+              fd.append(&#x27;companyLogo&#x27;, this.companyLogo);
+              this.registriesApis
+                .updateCompanyLogo(res.companyId, fd)
+                .subscribe(
+                  (res: any) &#x3D;&gt; {
+                    this.isLoading &#x3D; false;
+                    this.toast.open(this.messages.success.added, &#x27;close&#x27;);
+                  },
+                  (err: any) &#x3D;&gt; {
+                    this.toast.open(this.messages.error.unableTOAdd, &#x27;error&#x27;);
+                    this.isLoading &#x3D; false;
+                  }
+                );
+            } else {
+              this.toast.open(this.messages.success.added, &#x27;close&#x27;);
+              this.isLoading &#x3D; false;
+            }
+          },
+          (err: any) &#x3D;&gt; {
+            this.isLoading &#x3D; false;
+            this.toast.open(this.messages.unableToAdd, &#x27;error&#x27;);
+          }
+        );
+    } else {
+      this.toast.open(&#x27;Form Invalid&#x27;, &#x27;error&#x27;);
+    }
+  }
+
+  /**
+   * Drop Event
+   */
+  drop(event: CdkDragDrop&lt;any[]&gt;): void {
+    if (event.previousContainer &#x3D;&#x3D;&#x3D; event.container) {
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    }
+  }
+
+  /**
+   * Get Tenant
+   */
+  getTenant(): void {
+    this.registriesApis.getTenantById(this.tenantId).subscribe(
+      (res: any) &#x3D;&gt; {
+        
+        this.tenantModuleAccess &#x3D; [];
+        this.availableModules &#x3D; [];
+        this.allModules.map((el) &#x3D;&gt; {
+          if (res.data.access.includes(el.name)) {
+            this.tenantModuleAccess.push(el);
+          } else {
+            this.availableModules.push(el);
+          }
+        });
+        this.contactId &#x3D; res.data.businessId._id;
+        this.tenantForm.patchValue({
+          name: res.data.businessId.name,
+          vatNumber: res.data.businessId.vatNumber,
+          fiscalCode: res.data.businessId.fiscalCode,
+          sdiCode: res.data.businessId.sdiCode,
+          reaCode: res.data.businessId.reaCode,
+          phoneNumber: res.data.businessId.phoneNumber,
+          email: res.data.businessId.email,
+          pec: res.data.businessId.pec,
+          address: res.data.businessId.address,
+          postalCode: res.data.businessId.postalCode,
+          city: res.data.businessId.city,
+          province: res.data.businessId.province,
+          country: res.data.businessId.country,
+          access: res.data.access,
+          subDomain: res.data.subDomain,
+        });
+      },
+      (err: any) &#x3D;&gt; {
+        this.toast.open(this.messages.error.unableToGet,&#x27;error&#x27;);
+      }
+    );
+  }
+
+  /**
+   * Update Tenant
+   */
+  updateTenant(): void {
+    delete this.tenantForm.value.userForm;
+    let permissionArray: any[] &#x3D; [];
+    this.tenantModuleAccess.map((el: any) &#x3D;&gt; {
+      permissionArray.push(el.name);
+    });
+    this.tenantForm.patchValue({
+      access: permissionArray,
+    });
+    this.isLoading &#x3D; true;
+    this.registriesApis
+      .updateCompany(this.contactId, this.tenantForm.value)
+      .subscribe(
+        (res: any) &#x3D;&gt; {
+          this.registriesApis
+            .updateTenant(this.tenantId, this.tenantForm.value)
+            .subscribe(
+              (res: any) &#x3D;&gt; {
+                this.registriesApis
+                  .updateTenantAdminPermission(this.tenantId, {
+                    permissions: permissionArray,
+                  })
+                  .subscribe(
+                    (res: any) &#x3D;&gt; {
+                      this.toast.open(this.messages.success.updated, &#x27;close&#x27;);
+                    },
+                    (err: any) &#x3D;&gt; {
+                      this.toast.open(
+                        this.messages.error.unableToUpdate,
+                        &#x27;close&#x27;
+                      );
+                    }
+                  );
+                if (this.companyLogo) {
+                  const fd &#x3D; new FormData();
+                  fd.append(&#x27;companyLogo&#x27;, this.companyLogo);
+
+                  this.registriesApis
+                    .updateCompanyLogo(res.companyId, fd)
+                    .subscribe(
+                      (res: any) &#x3D;&gt; {
+                        this.isLoading &#x3D; false;
+                        this.toast.open(this.messages.success.updated, &#x27;close&#x27;);
+                        
+                      },
+                      (err: any) &#x3D;&gt; {
+                        this.toast.open(
+                          this.messages.error.unableToUpdate,
+                          &#x27;error&#x27;
+                        );
+                        this.isLoading &#x3D; false;
+                      }
+                    );
+                } else {
+                  this.isLoading &#x3D; false;
+                  this.toast.open(this.messages.success.updated, &#x27;close&#x27;);
+                }
+              },
+              (err: any) &#x3D;&gt; {
+                this.isLoading &#x3D; false;
+                this.toast.open(this.messages.error.unableToUpdate, &#x27;error&#x27;);
+              }
+            );
+        },
+        (err: any) &#x3D;&gt; {
+          this.isLoading &#x3D; false;
+          this.toast.open(this.messages.unableToUpdate, &#x27;error&#x27;);
+        }
+      );
+  }
+
+  /**
+   *
+   * @param {Event} e Angular Event
+   */
+  companyLogoUpload(e: any): void {
+    if (e.target.files[0].type.match(&#x27;image&#x27;)) {
+      this.companyLogo &#x3D; &lt;File&gt;e.target.files[0];
+    } else {
+      // this.openSnackBar(&#x27;Please upload a image type file&#x27;,&#x27;close&#x27;);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;component-header&quot;&gt;
+  &lt;div class&#x3D;&quot;heading&quot;&gt;
+    &lt;h3&gt;Tenant &lt;span&gt;PQS SRL&lt;/span&gt;&lt;/h3&gt;
+    &lt;a routerLink&#x3D;&quot;/registries/tenants&quot; class&#x3D;&quot;back-button&quot;&gt;&lt;mat-icon&gt;navigate_before&lt;/mat-icon&gt;Back to Tenant List&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;header-loader&quot; *ngIf&#x3D;&quot;isLoading&quot;&gt;
+    &lt;app-loader&gt;&lt;/app-loader&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;component-body&quot;&gt;
+  &lt;div class&#x3D;&quot;tenant-body&quot;&gt;
+    &lt;div class&#x3D;&quot;tenant-form&quot;&gt;
+      &lt;form [formGroup]&#x3D;&quot;tenantForm&quot;&gt;
+        &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-4&quot;&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Business name&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot;&gt;
+                  &lt;mat-error&gt;
+                    Business Name is &lt;strong&gt;required&lt;/strong&gt;
+                  &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;VAT&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;vatNumber&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Fiscal Code&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;fiscalCode&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;SDI code&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;sdiCode&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;REA code&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;reaCode&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Phone&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;phoneNumber&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Email&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;email&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;PEC&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;pec&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Address&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;address&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Postal Code&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;postalCode&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;City&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;city&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                  &lt;mat-label&gt;Province&lt;/mat-label&gt;
+                  &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;province&quot;&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
+                  &lt;mat-label&gt;Country&lt;/mat-label&gt;
+                  &lt;mat-select formControlName&#x3D;&quot;country&quot;&gt;
+                    &lt;mat-option
+                      *ngFor&#x3D;&quot;let country of countries&quot;
+                      [value]&#x3D;&quot;country.name&quot;
+                    &gt;
+                      {{ country.name }}
+                    &lt;/mat-option&gt;
+                  &lt;/mat-select&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-1&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-4&quot;&gt;
+              
+              &lt;div class&#x3D;&quot;fieldset-box&quot; *ngIf&#x3D;&quot;!editMode&quot;&gt;
+                &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                  &lt;fieldset formGroupName&#x3D;&quot;userForm&quot;&gt;
+                    &lt;legend&gt;Admin user of the tenant&lt;/legend&gt;
+                      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                          &lt;mat-label&gt; Name &lt;/mat-label&gt;
+                          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot;&gt; 
+                        &lt;/mat-form-field&gt;
+                      &lt;/div&gt;
+                      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                          &lt;mat-label&gt; Email &lt;/mat-label&gt;
+                          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;email&quot;&gt; 
+                        &lt;/mat-form-field&gt;
+                      &lt;/div&gt;
+                      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                          &lt;mat-label&gt; Phone Number &lt;/mat-label&gt;
+                          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;phoneNumber&quot;&gt; 
+                        &lt;/mat-form-field&gt;
+                      &lt;/div&gt;
+                      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                          &lt;mat-label&gt; User Name &lt;/mat-label&gt;
+                          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;userName&quot;&gt; 
+                        &lt;/mat-form-field&gt;
+                      &lt;/div&gt;
+                      &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;legacy&quot;&gt;
+                          &lt;mat-label&gt; Password &lt;/mat-label&gt;
+                          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;password&quot;&gt; 
+                        &lt;/mat-form-field&gt;
+                      &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;fieldset-box&quot;&gt;
+                &lt;div class&#x3D;&quot;form-field&quot;&gt;
+                  &lt;fieldset&gt;
+                    &lt;legend&gt;Tenant Domain &amp; logo&lt;/legend&gt;
+                    &lt;div class&#x3D;&quot;tenant-domain&quot;&gt;
+                      &lt;span class&#x3D;&quot;domain-label&quot;&gt;Domain:&lt;/span&gt;
+                      &lt;span&gt;https://&lt;/span&gt;
+                      &lt;span&gt;&lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;subDomain&quot;&gt;&lt;/span&gt;
+                      &lt;span&gt;.aidahub.com&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;tenant-logo&quot;&gt;
+                      &lt;div class&#x3D;&quot;logo-upload-area&quot;&gt;
+                        &lt;img src&#x3D;&quot;assets/sidebar-bottom-logo.svg&quot; alt&#x3D;&quot;Tenant logo&quot;&gt;
+                      &lt;/div&gt;
+                      &lt;input type&#x3D;&quot;file&quot; style&#x3D;&quot;display: None&quot; #companyLogo (change)&#x3D;&quot;companyLogoUpload($event)&quot;/&gt; 
+                      &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;companyLogo.click()&quot;&gt;&lt;mat-icon&gt;cloud_upload&lt;/mat-icon&gt;Upload logo&lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;tenant-access-wrapper&quot;&gt;
+      &lt;div class&#x3D;&quot;drag-drop-container&quot;&gt;
+        &lt;h2&gt;Available Modules&lt;/h2&gt;
+        &lt;div
+          cdkDropList
+          #tenantModuleAccessList&#x3D;&quot;cdkDropList&quot;
+          [cdkDropListData]&#x3D;&quot;availableModules&quot;
+          [cdkDropListConnectedTo]&#x3D;&quot;[availableModulesList]&quot;
+          class&#x3D;&quot;module-list&quot;
+          (cdkDropListDropped)&#x3D;&quot;drop($event)&quot;&gt;
+          &lt;div class&#x3D;&quot;module-box&quot; *ngFor&#x3D;&quot;let module of availableModules&quot; cdkDrag&gt;{{module.name}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div class&#x3D;&quot;drag-drop-container&quot;&gt;
+        &lt;h2&gt;Tenant Module Access&lt;/h2&gt;
+        &lt;div
+          cdkDropList
+          #availableModulesList&#x3D;&quot;cdkDropList&quot;
+          [cdkDropListData]&#x3D;&quot;tenantModuleAccess&quot;
+          [cdkDropListConnectedTo]&#x3D;&quot;[tenantModuleAccessList]&quot;
+          class&#x3D;&quot;module-list&quot;
+          (cdkDropListDropped)&#x3D;&quot;drop($event)&quot;&gt;
+          &lt;div class&#x3D;&quot;module-box&quot; *ngFor&#x3D;&quot;let module of tenantModuleAccess&quot; cdkDrag&gt;{{module.name}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;actions&quot;&gt;
+      &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;editMode? updateTenant(): createTenant()&quot;&gt;{{editMode? &#x27;Update Tenant&#x27; : &#x27;Create Tenant&#x27;}}&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./tenant.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.component-header {
+  background: #fff;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  margin: 0 -15px 20px;
+  padding: 15px;
+  border-bottom: 1px solid #f5f7f9;
+  .back-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+.fieldset-box {
+  fieldset {
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: 1px solid #afafaf;
+  }
+}
+
+.module-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.module-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.module-box:last-child {
+  border: none;
+}
+
+.module-list.cdk-drop-list-dragging .module-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.tenant-access-wrapper {
+  display: flex;
+  padding: 15px 20px;
+  background: #f5f7f9;
+  margin: 20px 0;
+  width: 80%;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid #d0d0d0;
+  .drag-drop-container {
+    flex: 0 0 calc(50% - 60px);
+    &amp;:first-child {
+      margin-right: 60px;
+    }
+    h2 {
+      margin: 10px 0 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+.actions {
+  text-align: right;
+  padding: 20px 0;
+  position: sticky;
+  bottom: 0;
+  width: calc(80% + 150px);
+}
+
+.tenant-domain {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0px;
+  .domain-label {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  input {
+    border: 0;
+    border-bottom: 1px solid #d0d0d0;
+    width: 200px;
+    outline: 0;
+    font-size: 14px;
+    font-family: &quot;Poppins&quot;, sans-serif;
+  }
+}
+
+.tenant-logo {
+  padding: 20px 0px 10px;
+  mat-icon {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.tenant-logo {
+  display: flex;
+  align-items: center;
+  button {
+    margin-left: 30px;
+  }
+  .logo-upload-area {
+    max-width: 200px;
+    max-height: 200px;
+    img {
+      width: 100%;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="component-header">  <div class="heading">    <h3>Tenant <span>PQS SRL</span></h3>    <a routerLink="/registries/tenants" class="back-button"><mat-icon>navigate_before</mat-icon>Back to Tenant List</a>  </div>  <div class="header-loader" *ngIf="isLoading">    <app-loader></app-loader>  </div></div><div class="component-body">  <div class="tenant-body">    <div class="tenant-form">      <form [formGroup]="tenantForm">        <div class="container-fluid">          <div class="row">            <div class="col-4">              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Business name</mat-label>                  <input matInput type="text" formControlName="name">                  <mat-error>                    Business Name is <strong>required</strong>                  </mat-error>                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>VAT</mat-label>                  <input matInput type="text" formControlName="vatNumber">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Fiscal Code</mat-label>                  <input matInput type="text" formControlName="fiscalCode">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>SDI code</mat-label>                  <input matInput type="text" formControlName="sdiCode">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>REA code</mat-label>                  <input matInput type="text" formControlName="reaCode">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Phone</mat-label>                  <input matInput type="text" formControlName="phoneNumber">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Email</mat-label>                  <input matInput type="text" formControlName="email">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>PEC</mat-label>                  <input matInput type="text" formControlName="pec">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Address</mat-label>                  <input matInput type="text" formControlName="address">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Postal Code</mat-label>                  <input matInput type="text" formControlName="postalCode">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>City</mat-label>                  <input matInput type="text" formControlName="city">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="legacy">                  <mat-label>Province</mat-label>                  <input matInput type="text" formControlName="province">                </mat-form-field>              </div>              <div class="form-field">                <mat-form-field appearance="fill">                  <mat-label>Country</mat-label>                  <mat-select formControlName="country">                    <mat-option                      *ngFor="let country of countries"                      [value]="country.name"                    >                      {{ country.name }}                    </mat-option>                  </mat-select>                </mat-form-field>              </div>            </div>            <div class="col-1">            </div>            <div class="col-4">                            <div class="fieldset-box" *ngIf="!editMode">                <div class="form-field">                  <fieldset formGroupName="userForm">                    <legend>Admin user of the tenant</legend>                      <div class="form-field">                        <mat-form-field appearance="legacy">                          <mat-label> Name </mat-label>                          <input matInput type="text" formControlName="name">                         </mat-form-field>                      </div>                      <div class="form-field">                        <mat-form-field appearance="legacy">                          <mat-label> Email </mat-label>                          <input matInput type="text" formControlName="email">                         </mat-form-field>                      </div>                      <div class="form-field">                        <mat-form-field appearance="legacy">                          <mat-label> Phone Number </mat-label>                          <input matInput type="text" formControlName="phoneNumber">                         </mat-form-field>                      </div>                      <div class="form-field">                        <mat-form-field appearance="legacy">                          <mat-label> User Name </mat-label>                          <input matInput type="text" formControlName="userName">                         </mat-form-field>                      </div>                      <div class="form-field">                        <mat-form-field appearance="legacy">                          <mat-label> Password </mat-label>                          <input matInput type="text" formControlName="password">                         </mat-form-field>                      </div>                  </fieldset>                </div>              </div>              <div class="fieldset-box">                <div class="form-field">                  <fieldset>                    <legend>Tenant Domain & logo</legend>                    <div class="tenant-domain">                      <span class="domain-label">Domain:</span>                      <span>https://</span>                      <span><input type="text" formControlName="subDomain"></span>                      <span>.aidahub.com</span>                    </div>                    <div class="tenant-logo">                      <div class="logo-upload-area">                        <img src="assets/sidebar-bottom-logo.svg" alt="Tenant logo">                      </div>                      <input type="file" style="display: None" #companyLogo (change)="companyLogoUpload($event)"/>                       <button mat-raised-button color="primary" (click)="companyLogo.click()"><mat-icon>cloud_upload</mat-icon>Upload logo</button>                    </div>                  </fieldset>                </div>              </div>            </div>          </div>        </div>      </form>    </div>    <div class="tenant-access-wrapper">      <div class="drag-drop-container">        <h2>Available Modules</h2>        <div          cdkDropList          #tenantModuleAccessList="cdkDropList"          [cdkDropListData]="availableModules"          [cdkDropListConnectedTo]="[availableModulesList]"          class="module-list"          (cdkDropListDropped)="drop($event)">          <div class="module-box" *ngFor="let module of availableModules" cdkDrag>{{module.name}}</div>        </div>      </div>            <div class="drag-drop-container">        <h2>Tenant Module Access</h2>        <div          cdkDropList          #availableModulesList="cdkDropList"          [cdkDropListData]="tenantModuleAccess"          [cdkDropListConnectedTo]="[tenantModuleAccessList]"          class="module-list"          (cdkDropListDropped)="drop($event)">          <div class="module-box" *ngFor="let module of tenantModuleAccess" cdkDrag>{{module.name}}</div>        </div>      </div>    </div>    <div class="actions">      <button mat-raised-button color="primary" (click)="editMode? updateTenant(): createTenant()">{{editMode? \'Update Tenant\' : \'Create Tenant\'}}</button>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActivitiesComponent', 'selector': 'app-activities'},{'name': 'AddCompanyComponent', 'selector': 'app-add-company'},{'name': 'AddContactComponent', 'selector': 'app-add-contact'},{'name': 'AddWidgetsDialogComponent', 'selector': 'app-add-widgets-dialog'},{'name': 'AidaLoaderComponent', 'selector': 'app-aida-loader'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssociatedContactComponent', 'selector': 'app-associated-contact'},{'name': 'AttachmentsComponent', 'selector': 'app-attachments'},{'name': 'AuthenticationComponent', 'selector': 'app-authentication'},{'name': 'BreadcrumbsComponent', 'selector': 'app-breadcrumbs'},{'name': 'CompaniesComponent', 'selector': 'app-companies'},{'name': 'CompanyComponent', 'selector': 'app-company'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContactsComponent', 'selector': 'app-contacts'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DeleteDialogComponent', 'selector': 'app-delete-dialog'},{'name': 'DriveComponent', 'selector': 'app-drive'},{'name': 'EmailComponent', 'selector': 'app-email'},{'name': 'EmailsComponent', 'selector': 'app-emails'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'ForgotPasswordStepFirstComponent', 'selector': 'app-forgot-password-step-first'},{'name': 'ForgotPasswordStepSecondComponent', 'selector': 'app-forgot-password-step-second'},{'name': 'GeneralEmailComponent', 'selector': 'app-general-email'},{'name': 'GeneralPhoneComponent', 'selector': 'app-general-phone'},{'name': 'GeneralSharedComponent', 'selector': 'app-general-shared'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HumanResourceComponent', 'selector': 'app-human-resource'},{'name': 'InformationComponent', 'selector': 'app-information'},{'name': 'ListsComponent', 'selector': 'app-lists'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBodyComponent', 'selector': 'app-main-body'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'MeetingComponent', 'selector': 'app-meeting'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'NotesComponent', 'selector': 'app-notes'},{'name': 'OpportunityComponent', 'selector': 'app-opportunity'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'PhoneComponent', 'selector': 'app-phone'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'QuickMenuComponent', 'selector': 'app-quick-menu'},{'name': 'RegistriesComponent', 'selector': 'app-registries'},{'name': 'RelatedCompaniesComponent', 'selector': 'app-related-companies'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SideSlideComponent', 'selector': 'app-side-slide'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SubHeaderMenuComponent', 'selector': 'app-sub-header-menu'},{'name': 'TabsComponent', 'selector': 'app-tabs'},{'name': 'TasksComponent', 'selector': 'app-tasks'},{'name': 'TenantComponent', 'selector': 'app-tenant'},{'name': 'TenantsComponent', 'selector': 'app-tenants'},{'name': 'TestComponent', 'selector': 'app-test'},{'name': 'TimeTrackingComponent', 'selector': 'app-time-tracking'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'WebsiteComponent', 'selector': 'app-website'},{'name': 'WidgetsComponent', 'selector': 'app-widgets'},{'name': 'WidgetsSharedComponent', 'selector': 'app-widgets-shared'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TenantComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TenantComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

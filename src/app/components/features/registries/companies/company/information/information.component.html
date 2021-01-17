@@ -1,0 +1,447 @@
+<div class="loader-wrapper" *ngIf="isLoading">
+  <app-aida-loader></app-aida-loader>
+</div>
+<div class="contacts-information">
+  <div class="photo">
+    <div class="photo-wrapper">
+      <input type="file" allow=".jpeg,.png,.jpg" style="display: none;" #companyLogo (change)="updateCompanyLogo($event)"/>
+      <img src="{{addCompanyFormView.value.companyLogo}}"  (click)="companyLogo.click()" alt="company logo">
+    </div>
+  </div>
+  <div class="basic-information">
+    <div class="name">
+      <!-- {{ this.addCompanyFormView.controls.name.value | titlecase }} -->
+      <form [formGroup]="addCompanyFormView">
+        <div class="form-field on-hover-edit">
+          <mat-form-field appearance="fill">
+            <!-- <mat-label>Name</mat-label> -->
+            <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="name"
+              />
+              <mat-error *ngIf="(this.addCompanyFormView.get('name')?.invalid || this.addCompanyFormView.get('name')?.touched) && this.addCompanyFormView.get('name')?.errors?.required">
+                {{ "RegistriesModule.NameIsRequired" | translate}}</mat-error>
+                <mat-error *ngIf="(this.addCompanyFormView.get('name')?.invalid || this.addCompanyFormView.get('name')?.touched) && this.addCompanyFormView.get('name')?.errors?.pattern">
+                  {{ "RegistriesModule.NameMustBeInTitleCase" | translate}}</mat-error>
+          </mat-form-field>
+        </div>
+        </form>
+    </div>
+    <div class="website">
+      <a href="{{ addCompanyFormView.get('website')?.value }}">{{
+        this.addCompanyFormView.get("website")?.value
+      }}</a>
+    </div>
+    <div class="actions">
+      <ul>
+        <li>
+          <a class="email" matTooltip="Email" (click)="widgetOpen('mail')">
+            <mat-icon>email</mat-icon>
+          </a>
+        </li>
+        <li>
+          <a class="email" matTooltip="Phone" (click)="widgetOpen('call')">
+            <mat-icon>phone</mat-icon>
+          </a>
+        </li>
+        <li>
+          <a class="email" matTooltip="Add Notes">
+            <mat-icon>add</mat-icon>
+          </a>
+        </li>
+        <li>
+          <a class="email" matTooltip="Meeting">
+            <mat-icon>meeting_room</mat-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="company-form-and-view-area">
+  <mat-accordion multi>
+    <mat-expansion-panel expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ "RegistriesModule.BasicInformation" | translate}} </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <form [formGroup]="addCompanyFormView">
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Typology" | translate}}</mat-label>
+              <mat-select (selectionChange)="updateCompany()" formControlName="typology">
+                <mat-option
+                  *ngFor="let industry of typology"
+                  [value]="industry.value"
+                >
+                  {{ industry.value }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Manager" | translate}}</mat-label>
+              <mat-select (selectionChange)="updateCompany()" formControlName="manager">
+                <mat-option *ngFor="let emp of managers" [value]="emp._id">
+                  {{ emp.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Notes" | translate}}</mat-label>
+              <textarea
+                (change)="updateCompany()"
+                matInput
+                formControlName="notes"
+              ></textarea>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Ateco" | translate}}</mat-label>
+              <mat-select
+                (selectionChange)="updateCompany()"
+                formControlName="ateco"
+              >
+                <mat-option *ngFor="let ateco of atecos" [value]="ateco.value">
+                  {{ ateco.value }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.VATNumber" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="vatNumber"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.FiscalCode" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="fiscalCode"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.SDICode" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="sdiCode"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.REACode" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="reaCode"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Tag" | translate}}</mat-label>
+              <mat-chip-list #chipList aria-label="Tag selection">
+                <mat-chip
+                  *ngFor="let tag of tagArray?.value;let i = index"
+                  [selectable]="selectable"
+                  [removable]="removable"
+                  (removed)="remove(tag?.id,i)"
+                >
+                  {{ tag }}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <mat-select
+                formControlName="tags"
+                #multiSelect
+              >
+              <mat-option>
+                <ngx-mat-select-search [formControl]="tagValue"></ngx-mat-select-search>
+              </mat-option>
+                <mat-option *ngFor="let tag of filteredTags | async" (click)="selected(tag.value)">
+                  {{ tag.value }}
+                </mat-option>
+              </mat-select>
+              </mat-chip-list>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.NumberOfEmployees" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                type="number"
+                matInput
+                formControlName="numberOfEmployees"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.BusinessDimension" | translate}}</mat-label>
+              <mat-select
+                (selectionChange)="updateCompany()"
+                formControlName="businessDimension"
+              >
+                <mat-option
+                  *ngFor="let bd of businessDimensions"
+                  [value]="bd.value"
+                >
+                  {{ bd.value }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field (click)="picker1.open()" color="accent" appearance="fill">
+              <mat-label>{{ "RegistriesModule.DataConstituzione" | translate}}</mat-label>
+              <input
+                (dateChange)="updateCompany()"
+                matInput
+                [matDatepicker]="picker1"
+                formControlName="dataConstituzione"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker1"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker1 [disabled]="false"></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ "RegistriesModule.MailAddress" | translate}} </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <form [formGroup]="addCompanyFormView">
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Addess" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="address"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.PostalCode" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="postalCode"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.City" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="city"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Province" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="province"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Region" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="region"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ "RegistriesModule.Country" | translate}}</mat-label>
+              <mat-select (selectionChange)="updateCompany()" formControlName="country">
+                <mat-option
+                  *ngFor="let country of countries"
+                  [value]="country.name"
+                >
+                  {{ country.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ "RegistriesModule.ContactInformation" | translate}}</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="expansion-content-body">
+        <form [formGroup]="addCompanyFormView">
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.PhoneNumber" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="phoneNumber"
+              />
+              <mat-error *ngIf="(this.addCompanyFormView.get('phoneNumber')?.invalid || this.addCompanyFormView.get('phoneNumber')?.touched) && this.addCompanyFormView.get('phoneNumber')?.errors?.required">
+                {{ "RegistriesModule.PhoneNumberIsRequired" | translate}}</mat-error>
+                <mat-error *ngIf="(this.addCompanyFormView.get('phoneNumber')?.invalid || this.addCompanyFormView.get('phoneNumber')?.touched) && this.addCompanyFormView.get('phoneNumber')?.errors?.pattern">
+                  {{ "RegistriesModule.PhoneNumberMustBeInFormat" | translate}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.OptionalPhoneNumber" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="optionalPhoneNumber"
+              />
+              <mat-error *ngIf="(this.addCompanyFormView.get('optionalPhoneNumber')?.invalid || this.addCompanyFormView.get('optionalPhoneNumber')?.touched) && this.addCompanyFormView.get('optionalPhoneNumber')?.errors?.pattern">
+                {{ "RegistriesModule.OptionalPhoneNumberMustBeInFormat" | translate}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>Fax{{ "RegistriesModule.NameMustBeInTitleCase" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="fax"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Email" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="email"
+              />
+              <mat-error *ngIf="(this.addCompanyFormView.get('email')?.invalid || this.addCompanyFormView.get('email')?.touched) && this.addCompanyFormView.get('email')?.errors?.required">
+                {{ "RegistriesModule.EmailIsRequired" | translate}}</mat-error>
+                <mat-error *ngIf="(this.addCompanyFormView.get('email')?.invalid || this.addCompanyFormView.get('email')?.touched) && this.addCompanyFormView.get('email')?.errors?.pattern">
+                  {{ "RegistriesModule.EmailMustBeInFormat" | translate}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.AdditionalEmail" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="additionalEmail"
+              />
+              <mat-error *ngIf="(this.addCompanyFormView.get('additionalEmail')?.invalid || this.addCompanyFormView.get('additionalEmail')?.touched) && this.addCompanyFormView.get('additionalEmail')?.errors?.required">
+                {{ "RegistriesModule.AdditionalEmailIsRequired" | translate}}</mat-error>
+                <mat-error *ngIf="(this.addCompanyFormView.get('additionalEmail')?.invalid || this.addCompanyFormView.get('additionalEmail')?.touched) && this.addCompanyFormView.get('additionalEmail')?.errors?.pattern">
+                  {{ "RegistriesModule.AdditionalEmailMustBeInFormat" | translate}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Pec" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="pec"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.Website" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="website"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.FacebookURL" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="facebookUrl"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-field on-hover-edit">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{ "RegistriesModule.LinkedInURL" | translate}}</mat-label>
+              <input
+                (change)="updateCompany()"
+                matInput
+                type="text"
+                formControlName="linkedInUrl"
+              />
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="form-field">
+    <button mat-button>{{ "RegistriesModule.Submit" | translate}}</button>
+  </div>
+</div>
+
+<!-- <div class="slide-bottom-to-top" [ngClass]="{ open: isSlideOpen }" #featureSlideUpElm>
+  <app-general-phone *ngIf="slideUpGeneral === 'phone'" ></app-general-phone>
+  <app-general-email *ngIf="slideUpGeneral === 'email'"></app-general-email>
+</div> -->

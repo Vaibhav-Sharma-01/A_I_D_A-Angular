@@ -1,0 +1,14 @@
+.actions {
+  display: flex;
+  align-items: self-end;
+  .table-search {
+    width: 250px;
+  }
+
+  button {
+    margin-left: 20px;
+    mat-icon {
+      margin-right: 8px;
+    }
+  }
+}
